@@ -1,0 +1,571 @@
+
+/*01 *GENERAL*/
+
+
+
+/*01 *GENERAL*/
+
+body {
+    background-color: #160f05;
+    color: #e6bc7b;
+    font-family: 'Cardo', serif;
+    font-weight: 200;
+    font-size: 17px;
+    letter-spacing: 0.1px;
+}
+
+@font-face {
+    font-family: "Prida01Light";
+    src: url(../fonts/gluk_prida01/Prida01Light.otf);
+}
+
+@font-face {
+    font-family: "Cinzel-Regular";
+    src: url(../fonts/cinzel/Cinzel-Regular.ttf);
+}
+
+@font-face {
+    font-family: "vintage";
+    src: url(../fonts/vintage/vintage.ttf);
+}
+
+@font-face {
+    font-family: "bergamot";
+    src: url(../fonts/bergamot/bergamot.ttf);
+}
+
+/* HEADER / NAV BAR */
+
+.header-main_menu {
+    background: #f4e5b7;
+    box-shadow: inset 0 1px 3px rgba(245, 210, 105, 0.6);
+    /*border-bottom: 1px solid #c8c4b9;*/
+    text-align: center;
+}
+
+.header-main_menu ul {
+    list-style: none;
+}
+
+.header-main_menu .tab {
+    font-size: 14px;
+ }
+
+.nav-link {
+    width: 175px;
+    font-family: 'Cardo', serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #584831 !important;
+}
+
+.nav-link:hover, .active {
+	color: #f3951a !important;
+	background-color: #f5ebd5;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+
+.ornament_icon {
+    width: 19px;
+    height: auto;
+}
+
+.logo {
+    width: 335px;
+    height: 49px;
+    display: block;
+    background-image: url(../imgs/generals/probus-core.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 0;
+}
+
+.header-sub_menu {
+	list-style: none;
+}
+
+.sub_menu_li {
+    display: inline-block;
+}
+
+.header-sub_menu a {
+	color: #e6bc7b;
+    text-transform: uppercase;
+    font-size: .75em;
+}
+
+.header-sub_menu a:hover {
+    text-decoration: none;
+    color: #f3debe;
+}
+
+/*respo*/
+
+.nav_button {
+    border: 1px solid #c59659;
+    box-shadow: 0 0 1px 1px #c59659;
+}
+
+.nav_button:focus {
+  outline: none;
+}
+
+.stripes {
+    width: 46px;
+    height: 46px;
+    border-radius: 8px;
+}
+
+.stripes1 {
+    font-family: 'bergamot';
+    font-size: 3em;
+    color: #c59659;
+}
+
+.nav_button:hover {
+    cursor: pointer !important;
+}
+
+/*HEADER COVER IMGS*/
+
+.o-nama-cover-img {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../imgs/o_nama/probus-o-nama-cover.jpg');
+    background-size: cover;
+    background-position: 55% -10%;
+    border-bottom: 1px solid #e6bc7b;
+    background-attachment: fixed;
+}
+
+.vina-cover-img {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../imgs/vina/probus-vina_cover.jpg');
+    background-size: cover;
+    background-position: 100% 47%;
+    border-bottom: 1px solid #e6bc7b;
+    background-attachment: fixed;
+}
+
+.kontakt-cover-img {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../imgs/kontakt/yardcov1.jpg');
+    background-size: cover;
+    background-position: 100% 25%;
+    border-bottom: 1px solid #e6bc7b;
+    background-attachment: fixed;
+}
+
+.galerija-cover-img-1 {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../imgs/galerija/cover.jpg');
+    background-size: cover;
+    background-position: center center;
+    border-bottom: 1px solid #e6bc7b;
+    background-attachment: fixed;
+}
+
+.galerija-cover-img-2 {
+    width: 100%;
+    height: 85vh;
+    background-image: url('../imgs/galerija/plantaze.jpg');
+    background-size:cover;
+    background-position: 100% 32%;
+    border-bottom: 1px solid #e6bc7b;
+    background-attachment: fixed;
+}
+
+.galerija-cover-img-3 {
+    width: 100%;
+    height: 500px;
+    background-image: url('../imgs/galerija/vinary.jpg');
+    background-size: cover;
+    background-position: 100% 25%;
+    border-bottom: 1px solid #e6bc7b;
+    background-attachment: fixed;
+}
+
+/*O NAMA*/
+
+.probus_txt_holder {
+    font-family: 'Cinzel-Regular', serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+}
+
+
+/*VINA*/
+
+.wines_title_holder {
+    font-family: 'Cinzel-Regular', serif;
+    letter-spacing: 6px;
+    color: #f3951a;
+}
+
+.wines_ornament {
+    font-family: 'bergamot';
+    font-size: 3em;
+    color: #f3951a;
+
+}
+
+.wine_type {
+    font-family: 'Prida01Light', serif;
+}
+
+.wine_type_subtitle {
+    font-family: 'Cinzel-Regular', serif;
+}
+
+.wine_txt {
+    font-family: 'Cinzel-Regular', serif;
+    font-size: 16px;
+}
+
+.bottle {
+    max-height: 470px;
+}
+
+.tech_sheet_link {
+    font-size: 18px;
+    color: #f3951a;
+}
+
+.tech_sheet_link:hover {
+    text-decoration: none;
+    color: #e9d1af;
+}
+
+/*GALERIJA*/
+
+/*.gallery-grid > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #e6bc7b;
+}
+
+.gallery-grid {
+    display: grid;
+    margin: 50px 2%;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-auto-rows: 190px;
+    grid-auto-flow: dense;
+}
+
+.hor {
+    grid-column: span 2;
+}
+
+.ver {
+    grid-row: span 2;
+}
+
+.big {
+    grid-column: span 2;
+    grid-row: span 2;
+}*/
+
+.gallery-block{
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.gallery-block.compact-gallery .item{
+    overflow: hidden;
+    margin-bottom: 0;
+    background: #0c0505;;
+    opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image{
+    transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info{
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description{
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    font-size: 17px;
+    line-height: 18px;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    opacity: 1;
+    transition: 0.8s ease;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+    font-family: 'Cinzel-Regular', serif;
+    color: #f8e1be;
+    text-shadow: 0 0 2px black;
+}
+
+.gallery-block.compact-gallery .item .description .description-heading{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body{
+    font-size: 0.8em;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+@media (min-width: 576px) {
+
+  .gallery-block.compact-gallery .item .description {
+      opacity: 0; 
+  }
+
+  .gallery-block.compact-gallery .item a:hover .description {
+      opacity: 1; 
+  } 
+
+  .gallery-block .zoom-on-hover:hover .image {
+      transform: scale(1.1);
+      opacity: 0.7; 
+  }
+}
+
+/*CONTACT STYLE*/
+
+div#contact-info {
+    padding: 50px;
+    color: #CAB58F;
+}
+
+.fa_contact {
+    color: #e6bc7b;
+    font-size: 25px;
+}
+
+.deco_line {
+    width: 60%;
+    height: auto;
+}
+
+div#contact-info p {
+    font-size: 1.2rem;
+}
+
+div#map {
+    height: 275px;
+    filter: brightness(80%) contrast(130%) sepia(100%);
+}
+
+section.contact {
+    margin: 60px;
+    background-color: #352b1e;
+    margin: 0;
+    padding: 38px 0;
+}
+
+.contact_logo {
+    width: 107px;
+    height: auto;
+}
+
+
+/* FOOTER */
+
+.footer-quick_links {
+	background: #f4e5b7;
+    border-top: 1px solid #c8c4b9;
+}
+
+.footer-quick_links a {
+    color: #876025;
+}
+
+.footer-quick_links a:hover {
+    text-decoration: none;
+    color: #f3951a;
+}
+
+.footer-main_menu {
+	width: 100%;
+    overflow: hidden;
+    background: #dedacd;
+    text-align: center;
+    background-color:#352b1e;
+}
+
+.footer-list2 {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+    width:100%;
+    display:inline-block;
+    padding:12px;
+}
+
+.footer-list2 > li {
+	margin-left:20px;
+	margin-right:20px;
+	display:inline-block;
+}
+
+.footer-list2 > li > a {
+	color: #af8e62;
+	font-family: Georgia, serif;
+}
+
+.footer-list2 > li > a:hover {
+    color: #f3951a;
+    text-decoration: none;
+}
+
+.footer-sub_footer {
+	background-color:#352b1e;
+	color: #8c7455;
+	padding:20px;
+}
+
+.footer-logo-wrapper {
+	
+}
+
+.footer-logo-img {
+    
+    max-width: 320px;
+    min-width: 267px;
+}
+
+.footer-block > ul {
+	padding:0;
+	margin-bottom:4px;
+}
+
+.footer-block > ul > li {
+	display:inline;
+	padding:6px;
+}
+
+.footer-block > ul > li > a {
+	color: #CAB58F;
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.footer-block > ul > li > a:hover {
+    color: #f3951a;
+    text-decoration: none;
+}
+
+.ornament_icon1 {
+    width: 17px;
+    height: auto;
+}
+
+.footer-block p {
+	color: #8c7455;
+    font-size: 0.9em;
+}
+
+.copyright {
+    margin-bottom:0;
+    color: #af8e62 !important;
+    font-size: 0.9em;
+}
+
+.footer-icons > a {
+	color: #CAB58F;
+	font-size: 1.3em;
+	text-decoration: none;
+}
+
+.footer-icons > a:hover {
+    color: #f3951a;
+    text-decoration: none;
+}
+
+/*SCROLL TOP BUTTON*/
+
+.scroll-top-button {
+    background: white;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.fa-angle-up {
+    color: black !important;
+}
+
+
+/*MEDIA QUERY*/
+
+/*GALERIJA*/
+@media screen and (max-width: 850px) {
+    .gallery-grid {
+        grid-gap: 20px;
+    }
+
+@media screen and (max-width: 500px) {
+    .gallery-grid {
+        grid-gap: 10px;
+    }
+
+    .hor {
+        grid-column: span 1;
+    }
+
+    .big {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+}
+
+/*FOOTER*/
+@media screen and (max-width: 993px) {
+    .foot_order1 {
+        order: 3;
+    }
+
+    .footer-logo {
+        margin-top: -17px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo {
+        margin-left: 23px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+	.footer-block {
+		text-align:center;
+	}
+
+	.footer-middle {
+		margin-top:30px;
+	}
+
+	.copyright {
+		margin-top:30px;
+	}
+} 
+
