@@ -193,10 +193,28 @@ body {
 
 /*O NAMA*/
 
+.o_nama_page_containers_margin {
+    margin-bottom: 100px !important;
+}
+
+.o_nama_page_h2 {
+    font-size: 2.5rem;
+}
+
 .probus_txt_holder {
     font-family: 'Cinzel-Regular', serif;
     font-size: 14px;
     letter-spacing: 3px;
+}
+
+.o_nama_probus_txt_holder {
+    font-family: 'Cinzel-Regular', serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.6px;
+}
+
+.probus-latinski {
+    font-size: 1.5rem;
 }
 
 
@@ -498,20 +516,21 @@ section.contact {
 /*SCROLL TOP BUTTON*/
 
 .scroll-top-button {
-    background: white;
+    background: #e6bc7b;;
     display: none;
     position: fixed;
     bottom: 0;
     right: 10px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 35px;
     font-size: 20px;
     cursor: pointer;
     z-index: 999;
 }
 
 .fa-angle-up {
-    color: black !important;
+    color: #160f05 !important;
+    font-size: 30px;
 }
 
 
