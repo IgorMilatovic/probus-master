@@ -34,13 +34,13 @@ a {
 }
 
 .entry-page-logo {
-  width: 450px;
-  height: 350px;
+  width: 330px;
+  height: 230px;
   display: inline-block;
   background-image: url(../imgs/entry_page/entry-page-logo.png);
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 120px;
+  margin-top: 20px;
 }
 
 @media (min-width: 1600px) {
@@ -73,6 +73,17 @@ a {
   font-style: normal;
   /*margin-top: 15px;*/
   text-shadow: -3px 2px black;
+}
+
+#opening-link {
+  max-width: 700px;
+}
+
+.txt_holder {
+  margin-top: 330px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .entry-sub-header {
