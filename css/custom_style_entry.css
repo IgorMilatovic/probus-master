@@ -22,7 +22,7 @@ a {
   background-image: url(../imgs/entry_page/naslovna_slika.JPG);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 100% 100%;
+  background-position: 100% 90%;
   text-align: center;
   filter: sepia(78%) saturate(150%);
   -webkit-filter: sepia(78%) saturate(150%);
@@ -75,12 +75,8 @@ a {
   text-shadow: -3px 2px black;
 }
 
-#opening-link {
-  max-width: 700px;
-}
-
 .txt_holder {
-  margin-top: 330px;
+  margin-top: 340px;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -88,7 +84,7 @@ a {
 
 .entry-sub-header {
   font-family: "futura-pt";
-  font-size: 25px;
+  font-size: 27px;
   line-height: 1.4em;
   text-transform: none;
   letter-spacing: 0.04em;
