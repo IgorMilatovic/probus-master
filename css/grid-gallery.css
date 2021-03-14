@@ -17,6 +17,10 @@
   --backdrop-color: rgba(30, 30, 30, 0.9);
 }
 
+.gg-container h3 {
+  color: #f3951a;
+}
+
 .gg-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(var(--column-width), 1fr));
