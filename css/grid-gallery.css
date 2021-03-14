@@ -94,7 +94,7 @@
 
 .gg-close,
 .gg-next {
-  right: 80px;
+  right: 20px;
 }
 
 .gg-prev {
@@ -145,6 +145,11 @@
   .gg-btn {
     padding: 2px;
     bottom: 25px;
+  }
+
+  .gg-close,
+  .gg-next {
+    right: 20px;
   }
 }
 
