@@ -89,7 +89,9 @@
 }
 
 .gg-close {
-  top: 25px;
+  top: 20px;
+  height: 34px;
+  padding: 0;
 }
 
 .gg-close,
@@ -104,6 +106,12 @@
 .gg-prev,
 .gg-next {
   bottom: 35px;
+}
+
+.gg-prev,
+.gg-next {
+  height: 45px;
+  padding: 5px;
 }
 
 @media (max-width: 1000px) {
