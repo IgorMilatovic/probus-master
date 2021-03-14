@@ -116,8 +116,6 @@
 
 @media (max-width: 1000px) {
   .gg-container {
-    --main-color: #000;
-    --secondary-color: #111;
     --txt-color: #fff;
     --img-bg-color: rgba(240, 240, 240, 0.9);
     --backdrop-color: rgba(22, 15, 5, 0.9);
