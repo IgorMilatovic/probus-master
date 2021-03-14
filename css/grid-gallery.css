@@ -79,7 +79,7 @@
   transition: all 0.4s ease;
   font-size: 38px;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 2px;
   position: fixed;
   bottom: 10px;
 }
@@ -89,12 +89,12 @@
 }
 
 .gg-close {
-  top: 10px;
+  top: 25px;
 }
 
 .gg-close,
 .gg-next {
-  right: 10px;
+  right: 80px;
 }
 
 .gg-prev {
@@ -103,7 +103,7 @@
 
 .gg-prev,
 .gg-next {
-  bottom: 25px;
+  bottom: 35px;
 }
 
 @media (max-width: 1000px) {
