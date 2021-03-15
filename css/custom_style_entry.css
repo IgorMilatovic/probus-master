@@ -40,7 +40,7 @@ a {
   background-image: url(../imgs/entry_page/entry-page-logo.png);
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 @media (min-width: 1600px) {
@@ -126,7 +126,7 @@ a {
   }
 
   .txt_holder {
-    margin-top: 150px;
+    margin-top: 160px;
   }
 
   .entry-unordered-list {
