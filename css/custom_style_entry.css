@@ -129,6 +129,9 @@ a {
   #entry-cover-sepia {
     background-position: 58% 90%;
   }
+  .txt_holder {
+    bottom: -665px;
+  }
 }
 
 @media screen and (max-width: 530px) {
