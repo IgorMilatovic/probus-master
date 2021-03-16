@@ -34,6 +34,11 @@ body {
     src: url(../fonts/bergamot/bergamot.ttf);
 }
 
+.sepia-img {
+    filter: sepia(40%);
+    -webkit-filter: sepia(40%);
+}
+
 /* HEADER / NAV BAR */
 
 .header-main_menu {
@@ -138,7 +143,7 @@ body {
     background-size: cover;
     background-position: center 30%;
     border-bottom: 1px solid #e6bc7b;
-    background-attachment: fixed;
+    filter: sepia(23%);
 }
 
 .vina-cover-img {
@@ -148,7 +153,6 @@ body {
     background-size: cover;
     background-position: 100% 47%;
     border-bottom: 1px solid #e6bc7b;
-    background-attachment: fixed;
 }
 
 .kontakt-cover-img {
@@ -158,7 +162,6 @@ body {
     background-size: cover;
     background-position: 100% 25%;
     border-bottom: 1px solid #e6bc7b;
-    background-attachment: fixed;
 }
 
 .galerija-cover-img-1 {
@@ -168,7 +171,6 @@ body {
     background-size: cover;
     background-position: center center;
     border-bottom: 1px solid #e6bc7b;
-    background-attachment: fixed;
 }
 
 .galerija-cover-img-2 {
@@ -178,7 +180,6 @@ body {
     background-size:cover;
     background-position: 100% 32%;
     border-bottom: 1px solid #e6bc7b;
-    background-attachment: fixed;
 }
 
 .galerija-cover-img-3 {
@@ -188,7 +189,6 @@ body {
     background-size: cover;
     background-position: 100% 25%;
     border-bottom: 1px solid #e6bc7b;
-    background-attachment: fixed;
 }
 
 /*O NAMA*/
