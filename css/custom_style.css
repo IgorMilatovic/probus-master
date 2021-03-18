@@ -154,7 +154,7 @@ body {
 .vina-cover-img {
     width: 100%;
     height: 85vh;
-    background-image: url('../imgs/vina/probus-vina_cover1.jpg');
+    background-image: url('../imgs/vina/vina_cover.jpg');
     background-size: cover;
     background-position: center center;
     filter: sepia(45%) contrast(140%) saturate(65%);
