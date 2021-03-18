@@ -156,6 +156,7 @@ body {
     background-image: url('../imgs/vina/probus-vina_cover.jpg');
     background-size: cover;
     background-position: 100% 47%;
+    filter: sepia(40%) contrast(140%) saturate(76%);
     border-bottom: 1px solid #e6bc7b;
 }
 
