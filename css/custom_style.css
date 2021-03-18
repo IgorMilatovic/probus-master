@@ -1,121 +1,119 @@
-
 /*01 *GENERAL*/
-
-
 
 /*01 *GENERAL*/
 
 body {
-    background-color: #160f05;
-    color: #e6bc7b;
-    font-family: 'Cardo', serif;
-    font-weight: 200;
-    font-size: 17px;
-    letter-spacing: 0.1px;
+  background-color: #160f05;
+  color: #e6bc7b;
+  font-family: "Cardo", serif;
+  font-weight: 200;
+  font-size: 17px;
+  letter-spacing: 0.1px;
 }
 
 @font-face {
-    font-family: "Prida01Light";
-    src: url(../fonts/gluk_prida01/Prida01Light.otf);
+  font-family: "Prida01Light";
+  src: url(../fonts/gluk_prida01/Prida01Light.otf);
 }
 
 @font-face {
-    font-family: "Cinzel-Regular";
-    src: url(../fonts/cinzel/Cinzel-Regular.ttf);
+  font-family: "Cinzel-Regular";
+  src: url(../fonts/cinzel/Cinzel-Regular.ttf);
 }
 
 @font-face {
-    font-family: "vintage";
-    src: url(../fonts/vintage/vintage.ttf);
+  font-family: "vintage";
+  src: url(../fonts/vintage/vintage.ttf);
 }
 
 @font-face {
-    font-family: "bergamot";
-    src: url(../fonts/bergamot/bergamot.ttf);
+  font-family: "bergamot";
+  src: url(../fonts/bergamot/bergamot.ttf);
 }
 
 .sepia-img {
-    filter: sepia(40%);
-    -webkit-filter: sepia(40%);
+  filter: sepia(40%);
+  -webkit-filter: sepia(40%);
 }
 
 .original-gold {
-    color: #f3951a;
+  color: #f3951a;
 }
 
 /* HEADER / NAV BAR */
 
 .header-main_menu {
-    background: #f4e5b7;
-    box-shadow: inset 0 1px 3px rgba(245, 210, 105, 0.6);
-    /*border-bottom: 1px solid #c8c4b9;*/
-    text-align: center;
+  background: #f4e5b7;
+  box-shadow: inset 0 1px 3px rgba(245, 210, 105, 0.6);
+  /*border-bottom: 1px solid #c8c4b9;*/
+  text-align: center;
 }
 
 .header-main_menu ul {
-    list-style: none;
+  list-style: none;
 }
 
 .header-main_menu .tab {
-    font-size: 14px;
- }
-
-.nav-link {
-    width: 175px;
-    font-family: 'Cardo', serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #584831 !important;
+  font-size: 14px;
 }
 
-.nav-link:hover, .active {
-	color: #f39112 !important;
-	/*background-color: #f5ebd5;*/
-    -moz-transition: all .2s ease-in;
-    -o-transition: all .2s ease-in;
-    -webkit-transition: all .2s ease-in;
-    transition: all .2s ease-in;
+.nav-link {
+  width: 175px;
+  font-family: "Cardo", serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #584831 !important;
+}
+
+.nav-link:hover,
+.active {
+  color: #f39112 !important;
+  /*background-color: #f5ebd5;*/
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .ornament_icon {
-    width: 19px;
-    height: auto;
+  width: 19px;
+  height: auto;
 }
 
 .logo {
-    width: 335px;
-    height: 49px;
-    display: block;
-    background-image: url(../imgs/generals/probus-core.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 50% 0;
+  width: 335px;
+  height: 49px;
+  display: block;
+  background-image: url(../imgs/generals/probus-core.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 0;
 }
 
 .header-sub_menu {
-	list-style: none;
+  list-style: none;
 }
 
 .sub_menu_li {
-    display: inline-block;
+  display: inline-block;
 }
 
 .header-sub_menu a {
-	color: #e6bc7b;
-    text-transform: uppercase;
-    font-size: .75em;
+  color: #e6bc7b;
+  text-transform: uppercase;
+  font-size: 0.75em;
 }
 
 .header-sub_menu a:hover {
-    text-decoration: none;
-    color: #f3debe;
+  text-decoration: none;
+  color: #f3debe;
 }
 
 /*respo*/
 
 .nav_button {
-    border: 1px solid #c59659;
-    box-shadow: 0 0 1px 1px #c59659;
+  border: 1px solid #c59659;
+  box-shadow: 0 0 1px 1px #c59659;
 }
 
 .nav_button:focus {
@@ -123,180 +121,184 @@ body {
 }
 
 .stripes {
-    width: 46px;
-    height: 46px;
-    border-radius: 8px;
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
 }
 
 .stripes1 {
-    font-family: 'bergamot';
-    font-size: 3em;
-    color: #c59659;
+  font-family: "bergamot";
+  font-size: 3em;
+  color: #c59659;
 }
 
 .nav_button:hover {
-    cursor: pointer !important;
+  cursor: pointer !important;
 }
 
 /*HEADER COVER IMGS*/
 
 .o-nama-cover-img {
-    width: 100%;
-    height: 85vh;
-    background-image: url('../imgs/o_nama/probus-o-nama-cover1.JPG');
-    background-size: cover;
-    background-position: center 30%;
-    border-bottom: 1px solid #e6bc7b;
-    filter: sepia(23%);
-    border-bottom: 1px solid #e6bc7b;
+  width: 100%;
+  height: 85vh;
+  background-image: url("../imgs/o_nama/probus-o-nama-cover1.JPG");
+  background-size: cover;
+  background-position: center 30%;
+  border-bottom: 1px solid #e6bc7b;
+  filter: sepia(23%);
+  border-bottom: 1px solid #e6bc7b;
 }
 
 .vina-cover-img {
-    width: 100%;
-    height: 85vh;
-    background-image: url('../imgs/vina/vina_cover.jpg');
-    background-size: cover;
-    background-position: center center;
-    filter: sepia(45%) contrast(140%) saturate(65%);
-    border-bottom: 1px solid #e6bc7b;
+  width: 100%;
+  height: 85vh;
+  background-image: url("../imgs/vina/vina_cover.jpg");
+  background-size: cover;
+  background-position: center center;
+  filter: sepia(45%) contrast(140%) saturate(65%);
+  border-bottom: 1px solid #e6bc7b;
+}
+
+@media screen and (max-width: 1000px) {
+  .vina-cover-img {
+    background-position: 46% center;
+  }
 }
 
 .kontakt-cover-img {
-    width: 100%;
-    height: 85vh;
-    background-image: url('../imgs/kontakt/kontakt_cover1.jpg');
-    background-size: cover;
-    background-position: 100% 60%;
-    border-bottom: 1px solid #e6bc7b;
+  width: 100%;
+  height: 85vh;
+  background-image: url("../imgs/kontakt/kontakt_cover1.jpg");
+  background-size: cover;
+  background-position: 100% 60%;
+  border-bottom: 1px solid #e6bc7b;
 }
 
 .galerija-cover-img-1 {
-    width: 100%;
-    height: 85vh;
-    background-image: url('../imgs/galerija/cover.jpg');
-    background-size: cover;
-    background-position: center center;
-    border-bottom: 1px solid #e6bc7b;
+  width: 100%;
+  height: 85vh;
+  background-image: url("../imgs/galerija/cover.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-bottom: 1px solid #e6bc7b;
 }
 
 .galerija-cover-img-2 {
-    width: 100%;
-    height: 85vh;
-    background-image: url('../imgs/galerija/plantaze.jpg');
-    background-size:cover;
-    background-position: 100% 32%;
-    border-bottom: 1px solid #e6bc7b;
+  width: 100%;
+  height: 85vh;
+  background-image: url("../imgs/galerija/plantaze.jpg");
+  background-size: cover;
+  background-position: 100% 32%;
+  border-bottom: 1px solid #e6bc7b;
 }
 
 .galerija-cover-img-3 {
-    width: 100%;
-    height: 500px;
-    background-image: url('../imgs/galerija/vinary.jpg');
-    background-size: cover;
-    background-position: 100% 25%;
-    border-bottom: 1px solid #e6bc7b;
+  width: 100%;
+  height: 500px;
+  background-image: url("../imgs/galerija/vinary.jpg");
+  background-size: cover;
+  background-position: 100% 25%;
+  border-bottom: 1px solid #e6bc7b;
 }
 
 .vesti-cover-img {
-    width: 100%;
-    height: 85vh;
-    background-image: url('../imgs/vesti/vesti_cover.jpg');
-    background-size: cover;
-    background-position: 75% center;
-    filter: sepia(74%) saturate(142%) contrast(115%);;
-    -webkit-filter: sepia(74%) saturate(142%) contrast(115%);;
-    border-bottom: 1px solid #e6bc7b;
+  width: 100%;
+  height: 85vh;
+  background-image: url("../imgs/vesti/vesti_cover.jpg");
+  background-size: cover;
+  background-position: 75% center;
+  filter: sepia(74%) saturate(142%) contrast(115%);
+  -webkit-filter: sepia(74%) saturate(142%) contrast(115%);
+  border-bottom: 1px solid #e6bc7b;
 }
 
 /*O NAMA*/
 
 .o_nama_page_containers_margin {
-    margin-bottom: 100px !important;
+  margin-bottom: 100px !important;
 }
 
 .o_nama_page_h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .probus_txt_holder {
-    font-family: 'Cinzel-Regular', serif;
-    font-size: 14px;
-    letter-spacing: 3px;
+  font-family: "Cinzel-Regular", serif;
+  font-size: 14px;
+  letter-spacing: 3px;
 }
 
 .o_nama_probus_txt_holder {
-    font-family: 'Cinzel-Regular', serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.6px;
+  font-family: "Cinzel-Regular", serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.6px;
 }
 
 .milorad_potpis {
-    color: #f39112;
+  color: #f39112;
 }
 
 .probus-latinski {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-
 
 /*VINA*/
 
 .wines_title_holder {
-    font-family: 'Cinzel-Regular', serif;
-    letter-spacing: 6px;
+  font-family: "Cinzel-Regular", serif;
+  letter-spacing: 6px;
 }
 
 .wines_ornament {
-    font-family: 'bergamot';
-    font-size: 3em;
-    color: #f3951a;
-
+  font-family: "bergamot";
+  font-size: 3em;
+  color: #f3951a;
 }
 
 .wine_type {
-    font-family: 'Prida01Light', serif;
-    color: #f3951a
+  font-family: "Prida01Light", serif;
+  color: #f3951a;
 }
 
 .wine_type_subtitle {
-    font-family: 'Cinzel-Regular', serif;
-    color: #f3951a
+  font-family: "Cinzel-Regular", serif;
+  color: #f3951a;
 }
 
 .wine_txt {
-    font-family: 'Cinzel-Regular', serif;
-    font-size: 1.15rem;
+  font-family: "Cinzel-Regular", serif;
+  font-size: 1.15rem;
 }
 
 .bottle {
-    max-height: 470px;
+  max-height: 470px;
 }
 
 .dizajn_etikete_naslov {
-    font-family: 'Cinzel-Regular', serif;
-    font-size: 1.30rem;
-    color: #f3951a
+  font-family: "Cinzel-Regular", serif;
+  font-size: 1.3rem;
+  color: #f3951a;
 }
 
 .dizajn_etikete_podnaslov {
-    font-family: 'Cinzel-Regular', serif;
-    font-size: 1.25rem;
-    color: #f3951a
+  font-family: "Cinzel-Regular", serif;
+  font-size: 1.25rem;
+  color: #f3951a;
 }
 
 .dizajn_etikete_text {
-    font-family: 'Cinzel-Regular', serif;
-    font-size: 1.15rem;
+  font-family: "Cinzel-Regular", serif;
+  font-size: 1.15rem;
 }
 
 .tech_sheet_link {
-    font-size: 18px;
-    color: #f3951a;
+  font-size: 18px;
+  color: #f3951a;
 }
 
 .tech_sheet_link:hover {
-    text-decoration: none;
-    color: #e9d1af;
+  text-decoration: none;
+  color: #e9d1af;
 }
 
 /*GALERIJA*/
@@ -402,259 +404,255 @@ body {
 /*CONTACT STYLE*/
 
 div#contact-info {
-    padding: 50px;
-    color: #CAB58F;
+  padding: 50px;
+  color: #cab58f;
 }
 
 .fa_contact {
-    color: #e6bc7b;
-    font-size: 25px;
+  color: #e6bc7b;
+  font-size: 25px;
 }
 
 .deco_line {
-    width: 60%;
-    height: auto;
+  width: 60%;
+  height: auto;
 }
 
 div#contact-info .adresa:hover {
-    color: #e6bc7b !important;
+  color: #e6bc7b !important;
 }
 
 div#contact-info p {
-    font-size: 1.4rem;
-    color: #e6bc7b !important;
+  font-size: 1.4rem;
+  color: #e6bc7b !important;
 }
 
 div#contact-info a {
-    text-decoration: none;
+  text-decoration: none;
 }
-  
+
 div#contact-info a:visited {
-    text-decoration: none;
+  text-decoration: none;
 }
-  
+
 div#contact-info p:hover {
-    color: #f3951a !important;
+  color: #f3951a !important;
 }
 
 div#map {
-    height: 275px;
-    filter: brightness(80%) contrast(130%) sepia(100%);
+  height: 275px;
+  filter: brightness(80%) contrast(130%) sepia(100%);
 }
 
 section.contact {
-    margin: 60px;
-    background-color: #352b1e;
-    margin: 0;
-    padding: 38px 0;
+  margin: 60px;
+  background-color: #352b1e;
+  margin: 0;
+  padding: 38px 0;
 }
 
 .contact_logo {
-    width: 107px;
-    height: auto;
+  width: 107px;
+  height: auto;
 }
 
 /* VESTI */
 
 .coming-soon {
-    font-size: 2.5rem;
-    letter-spacing: 2px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
 }
 
 @media screen and (max-width: 993px) {
-    .coming-soon {
-        font-size: 1.5rem;
-        letter-spacing: 2px;
-    }
+  .coming-soon {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
 }
-
 
 /* FOOTER */
 
 .footer-quick_links {
-	background: #f4e5b7;
-    border-top: 1px solid #c8c4b9;
+  background: #f4e5b7;
+  border-top: 1px solid #c8c4b9;
 }
 
 .footer-quick_links a {
-    color: #876025;
+  color: #876025;
 }
 
 .footer-quick_links a:hover {
-    text-decoration: none;
-    color: #f3951a;
+  text-decoration: none;
+  color: #f3951a;
 }
 
 .footer-main_menu {
-	width: 100%;
-    overflow: hidden;
-    background: #dedacd;
-    text-align: center;
-    background-color:#352b1e;
+  width: 100%;
+  overflow: hidden;
+  background: #dedacd;
+  text-align: center;
+  background-color: #352b1e;
 }
 
 .footer-list2 {
-	margin: 0;
-    padding: 0;
-    list-style: none;
-    width:100%;
-    display:inline-block;
-    padding:12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+  padding: 12px;
 }
 
 .footer-list2 > li {
-	margin-left:20px;
-	margin-right:20px;
-	display:inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
 }
 
 .footer-list2 > li > a {
-	color: #af8e62;
-	font-family: Georgia, serif;
+  color: #af8e62;
+  font-family: Georgia, serif;
 }
 
 .footer-list2 > li > a:hover {
-    color: #f3951a;
-    text-decoration: none;
+  color: #f3951a;
+  text-decoration: none;
 }
 
 .footer-sub_footer {
-	background-color:#352b1e;
-	color: #8c7455;
-	padding:20px;
+  background-color: #352b1e;
+  color: #8c7455;
+  padding: 20px;
 }
 
 .footer-logo-wrapper {
-	
 }
 
 .footer-logo-img {
-    
-    max-width: 320px;
-    min-width: 267px;
+  max-width: 320px;
+  min-width: 267px;
 }
 
 .footer-block > ul {
-	padding:0;
-	margin-bottom:4px;
+  padding: 0;
+  margin-bottom: 4px;
 }
 
 .footer-block > ul > li {
-	display:inline;
-	padding:6px;
+  display: inline;
+  padding: 6px;
 }
 
 .footer-block > ul > li > a {
-	color: #CAB58F;
-    font-family: Georgia, serif;
-    font-weight: normal;
-    font-size: 0.9em;
+  color: #cab58f;
+  font-family: Georgia, serif;
+  font-weight: normal;
+  font-size: 0.9em;
 }
 
 .footer-block > ul > li > a:hover {
-    color: #f3951a;
-    text-decoration: none;
+  color: #f3951a;
+  text-decoration: none;
 }
 
 .ornament_icon1 {
-    width: 17px;
-    height: auto;
+  width: 17px;
+  height: auto;
 }
 
 .footer-block p {
-	color: #8c7455;
-    font-size: 0.9em;
+  color: #8c7455;
+  font-size: 0.9em;
 }
 
 .copyright {
-    margin-bottom:0;
-    color: #af8e62 !important;
-    font-size: 0.9em;
+  margin-bottom: 0;
+  color: #af8e62 !important;
+  font-size: 0.9em;
 }
 
 .footer-icons > a {
-	color: #CAB58F;
-	font-size: 1.3em;
-	text-decoration: none;
+  color: #cab58f;
+  font-size: 1.3em;
+  text-decoration: none;
 }
 
 .footer-icons > a:hover {
-    color: #f3951a;
-    text-decoration: none;
+  color: #f3951a;
+  text-decoration: none;
 }
 
 /*SCROLL TOP BUTTON*/
 
 .scroll-top-button {
-    background: #e6bc7b;;
-    display: none;
-    position: fixed;
-    bottom: 0;
-    right: 10px;
-    width: 40px;
-    height: 35px;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 999;
+  background: #e6bc7b;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 10px;
+  width: 40px;
+  height: 35px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999;
 }
 
 .fa-angle-up {
-    color: #160f05 !important;
-    font-size: 30px;
+  color: #160f05 !important;
+  font-size: 30px;
 }
-
 
 /*MEDIA QUERY*/
 
 /*GALERIJA*/
 @media screen and (max-width: 850px) {
-    .gallery-grid {
-        grid-gap: 20px;
-    }
+  .gallery-grid {
+    grid-gap: 20px;
+  }
+}
 
 @media screen and (max-width: 500px) {
-    .gallery-grid {
-        grid-gap: 10px;
-    }
+  .gallery-grid {
+    grid-gap: 10px;
+  }
 
-    .hor {
-        grid-column: span 1;
-    }
+  .hor {
+    grid-column: span 1;
+  }
 
-    .big {
-        grid-column: span 1;
-        grid-row: span 2;
-    }
+  .big {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
 }
 
 /*FOOTER*/
 @media screen and (max-width: 993px) {
-    .foot_order1 {
-        order: 3;
-    }
+  .foot_order1 {
+    order: 3;
+  }
 
-    .footer-logo {
-        margin-top: -17px;
-    }
+  .footer-logo {
+    margin-top: -17px;
+  }
 }
 
 @media screen and (max-width: 400px) {
-    .logo {
-        margin-left: 23px;
-    }
+  .logo {
+    margin-left: 23px;
+  }
 }
 
 @media screen and (max-width: 767px) {
-	.footer-block {
-		text-align:center;
-	}
+  .footer-block {
+    text-align: center;
+  }
 
-	.footer-middle {
-		margin-top:30px;
-	}
+  .footer-middle {
+    margin-top: 30px;
+  }
 
-	.copyright {
-		margin-top:30px;
-	}
-} 
-
+  .copyright {
+    margin-top: 30px;
+  }
+}
