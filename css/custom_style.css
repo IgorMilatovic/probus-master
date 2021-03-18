@@ -212,6 +212,12 @@ body {
   border-bottom: 1px solid #e6bc7b;
 }
 
+@media screen and (max-width: 1000px) {
+  .vina-cover-img {
+    background-position: 30% center;
+  }
+}
+
 /*O NAMA*/
 
 .o_nama_page_containers_margin {
