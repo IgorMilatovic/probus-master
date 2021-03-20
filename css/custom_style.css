@@ -283,6 +283,12 @@ body {
   font-size: 1.15rem;
 }
 
+.wine-spec {
+  border-top: 1px solid #f3951a;
+  border-bottom: 1px solid #f3951a;
+  margin-top: 30px;
+}
+
 .bottle {
   max-height: 470px;
 }
@@ -459,7 +465,7 @@ div#map {
 
 section.contact {
   margin: 60px;
-  background-color: #352b1e;
+  background-color: #160f05;
   margin: 0;
   padding: 38px 0;
 }
@@ -470,6 +476,13 @@ section.contact {
 }
 
 /* VESTI */
+
+section.vesti {
+  margin: 60px;
+  background-color: #160f05;
+  margin: 0;
+  padding: 38px 0;
+}
 
 .coming-soon {
   font-size: 2.5rem;
@@ -485,6 +498,10 @@ section.contact {
 
 /* FOOTER */
 
+.up-footer-line {
+  height: 5px;
+  background: #f4e5b7;
+}
 .footer-quick_links {
   background: #f4e5b7;
   border-top: 1px solid #c8c4b9;
@@ -552,7 +569,7 @@ section.contact {
 }
 
 .footer-block > ul > li {
-  display: inline;
+  display: inline-block;
   padding: 6px;
 }
 
