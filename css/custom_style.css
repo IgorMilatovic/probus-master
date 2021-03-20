@@ -502,6 +502,11 @@ section.vesti {
   height: 5px;
   background: #f4e5b7;
 }
+
+footer .fa-instagram {
+  font-size: 30px;
+}
+
 .footer-quick_links {
   background: #f4e5b7;
   border-top: 1px solid #c8c4b9;
