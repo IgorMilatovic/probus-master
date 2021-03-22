@@ -242,7 +242,7 @@ body {
   }
 
   .shop-cover-img {
-    background-position: 30% 15%;
+    background-position: 37% 2%;
   }
 }
 
@@ -566,7 +566,7 @@ section.vesti {
   text-decoration: none !important;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1000px) {
   .shop_txt {
     text-align: left;
     line-height: 30px;
