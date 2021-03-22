@@ -225,7 +225,7 @@ body {
   background-image: url("../imgs/shop/shop_cover.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 0%;
+  background-position: center 30%;
   filter: sepia(74%) saturate(142%) contrast(115%);
   -webkit-filter: sepia(74%) saturate(142%) contrast(115%);
   border-bottom: 1px solid #e6bc7b;
