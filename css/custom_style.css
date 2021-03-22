@@ -558,6 +558,7 @@ section.vesti {
   font-size: 1.5rem;
   color: #f0e1c4;
 }
+
 .shop-contact:hover {
   color: #f3951a;
 }
@@ -571,6 +572,11 @@ section.vesti {
     text-align: left;
     line-height: 30px;
   }
+
+  .shop-contact {
+    font-size: 1.4rem;
+    color: #f0e1c4;
+  }
 }
 
 .shop-coming-soon {
@@ -580,7 +586,7 @@ section.vesti {
 
 @media screen and (max-width: 993px) {
   .coming-soon {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     letter-spacing: 2px;
   }
 }
