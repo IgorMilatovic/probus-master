@@ -132,6 +132,10 @@ body {
   color: #c59659;
 }
 
+.stripes1:hover {
+  color: #f3951a;
+}
+
 .nav_button:hover {
   cursor: pointer !important;
 }
