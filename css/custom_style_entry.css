@@ -110,7 +110,7 @@ a {
   color: whitesmoke;
 }
 
-#opening-link {
+#opening-link-top {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
@@ -134,7 +134,7 @@ a {
 
 .welcome_holder {
   color: whitesmoke;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 
 .welcome_holder {
@@ -147,6 +147,7 @@ a {
 
 .welcome_holder p {
   margin: 0;
+  padding: 3px;
 }
 
 .wines_ornament-entry {
@@ -159,7 +160,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .welcome_holder {
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
 }
 
