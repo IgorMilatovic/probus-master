@@ -114,11 +114,22 @@ a {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
+  top: 0;
+  width: 100%;
+  background: rgba(243, 149, 26, 0.9);
+  border-top: 2px solid #f3951a;
+  border-bottom: 1px solid #f3951a;
+}
+
+#opening-link-bottom {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
   bottom: 0;
   width: 100%;
   background: rgba(243, 149, 26, 0.9);
   border-top: 2px solid #f3951a;
-  border-bottom: 2px solid #f3951a;
+  border-bottom: 1px solid #f3951a;
 }
 
 .welcome_holder {
@@ -136,6 +147,14 @@ a {
 
 .welcome_holder p {
   margin: 0;
+}
+
+.wines_ornament-entry {
+  font-family: "bergamot";
+  font-size: 1.5em;
+  color: #f3951a;
+  position: relative;
+  bottom: 8px;
 }
 
 @media screen and (max-width: 767px) {
