@@ -112,8 +112,10 @@ a {
 
 #opening-link {
   position: absolute;
-  bottom: 36px;
-  left: 44%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+  width: 100%;
   background: rgba(243, 149, 26, 0.9);
   border-top: 2px solid #f3951a;
   border-bottom: 2px solid #f3951a;
@@ -129,10 +131,17 @@ a {
   background: rgba(245, 245, 245, 1);
   border-top: 2px solid #f3951a;
   border-bottom: 2px solid #f3951a;
+  height: 40px !important;
 }
 
 .welcome_holder p {
   margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .welcome_holder {
+    font-size: 1.4em;
+  }
 }
 
 /*ENTRY PAGE CONTENT ENDS*/
@@ -153,9 +162,6 @@ a {
 
   #entry-cover-sepia {
     background-position: 58% 90%;
-  }
-  .txt_holder {
-    bottom: -685px;
   }
 }
 
