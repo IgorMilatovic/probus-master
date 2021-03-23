@@ -305,6 +305,8 @@ body {
 }
 
 .wine-spec {
+  color: #2e1f07;
+  background-color: #e7d7a6;
   border-top: 1px solid #f3951a;
   border-bottom: 1px solid #f3951a;
   margin-top: 30px;
@@ -552,6 +554,9 @@ section.vesti {
   text-align: center;
   vertical-align: middle;
   line-height: 35px;
+  border-top: 1px solid #f3951a;
+  border-bottom: 1px solid #f3951a;
+  margin-top: 30px;
 }
 
 .shop-contact {

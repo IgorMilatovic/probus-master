@@ -110,6 +110,31 @@ a {
   color: whitesmoke;
 }
 
+#opening-link {
+  position: absolute;
+  bottom: 36px;
+  left: 44%;
+  background: rgba(243, 149, 26, 0.9);
+  border-top: 2px solid #f3951a;
+  border-bottom: 2px solid #f3951a;
+}
+
+.welcome_holder {
+  color: whitesmoke;
+  font-size: 1.4em;
+}
+
+.welcome_holder {
+  color: rgba(243, 149, 26, 0.9);
+  background: rgba(245, 245, 245, 1);
+  border-top: 2px solid #f3951a;
+  border-bottom: 2px solid #f3951a;
+}
+
+.welcome_holder p {
+  margin: 0;
+}
+
 /*ENTRY PAGE CONTENT ENDS*/
 
 /*MEDIA QUERY*/
