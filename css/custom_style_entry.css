@@ -32,6 +32,7 @@ a {
   -o-transition: all 1s ease;
   transition: all 1s ease;
   position: relative;
+  overflow: hidden;
 }
 
 .entry-page-logo {
@@ -145,9 +146,13 @@ a {
   height: 40px !important;
 }
 
+.welcome_holder div {
+  line-height: 0;
+}
+
 .welcome_holder p {
   margin: 0;
-  padding: 3px;
+  padding: 8px;
 }
 
 .wines_ornament-entry {
@@ -155,7 +160,7 @@ a {
   font-size: 1.5em;
   color: #f3951a;
   position: relative;
-  bottom: 8px;
+  bottom: -9px;
 }
 
 @media screen and (max-width: 767px) {
@@ -185,7 +190,7 @@ a {
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
   .txt_holder {
     bottom: -600px;
   }
