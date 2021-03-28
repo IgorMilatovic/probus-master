@@ -92,14 +92,14 @@ a {
 }
 
 .entry-sub-header {
-  font-family: "futura-pt";
+  font-family: "futura-pt" !important;
   font-size: 27px;
   line-height: 1.4em;
   text-transform: none;
   letter-spacing: 0.04em;
   font-weight: 400;
   color: #fff;
-  font-style: italic;
+  font-style: italic !important;
   /*margin-top:20px;*/
   text-shadow: -3px 2px black;
   display: inline;
