@@ -155,6 +155,10 @@ a {
   padding: 8px;
 }
 
+.welcome-holder-up p {
+  padding: 4px;
+}
+
 .wines_ornament-entry {
   font-family: "bergamot";
   font-size: 1.5em;
