@@ -185,6 +185,12 @@ a {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .txt_holder {
+    bottom: -600px;
+  }
+}
+
 @media screen and (max-width: 530px) {
   .entry-sub-header {
     font-size: 20px;
