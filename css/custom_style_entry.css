@@ -188,11 +188,9 @@ a {
   #entry-cover-sepia {
     background-position: 58% 90%;
   }
-}
 
-@media screen and (max-width: 1200px) {
   .txt_holder {
-    bottom: -600px;
+    bottom: -630px !important;
   }
 }
 
