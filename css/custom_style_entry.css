@@ -49,6 +49,25 @@ a {
   position: absolute;
 }
 
+.entry-click {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 63%;
+  transform: translate(-50%, 0);
+}
+
+.entry-click p {
+  border-top: 3px solid #f3951a;
+  border-bottom: 3px solid #f3951a;
+  color: #f3951a;
+  outline: #f3951a;
+  background: rgba(245, 245, 245, 1);
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media (min-width: 1600px) {
   .entry-page-logo {
     /*margin-top: 190px;*/
@@ -157,6 +176,7 @@ a {
 
 .welcome-holder-up p {
   padding: 4px;
+  margin: -17px;
 }
 
 .wines_ornament-entry {
