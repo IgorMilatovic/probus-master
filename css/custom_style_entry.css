@@ -57,6 +57,12 @@ a {
   transform: translate(-50%, 0);
 }
 
+@media (max-width: 480px) {
+  .entry-click {
+    top: 45%;
+  }
+}
+
 .entry-click p {
   /*border-top: 3px solid #f3951a;
   border-bottom: 3px solid #f3951a;*/
