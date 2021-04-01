@@ -539,6 +539,58 @@ section.vesti {
   padding: 38px 0;
 }
 
+/*.vesti-text-holder {
+  position: relative;
+}
+
+.vesti-txt {
+  position: absolute;
+  top: 25%;
+  transform: translate(0, 50%);
+  left: 0;
+}*/
+
+.vesti-img {
+  max-width: 400px;
+}
+
+.vesti-img-horizontal {
+  max-width: 600px;
+}
+
+.vesti-video-iframe {
+  width: 800px;
+  height: 400px;
+}
+
+@media screen and (max-width: 850px) {
+  .vesti-video-iframe {
+    width: 600px;
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .vesti-video-iframe {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+.vesti-link {
+  font-size: 20px !important;
+}
+
+.vesti-hr {
+  background: rgb(239, 232, 211) none repeat scroll 0% 0%;
+  width: 120%;
+}
+
+.ornament_icon_vesti {
+  width: 40px;
+  height: auto;
+}
+
 .coming-soon {
   font-size: 2.5rem;
   letter-spacing: 2px;
