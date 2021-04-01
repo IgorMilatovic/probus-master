@@ -61,6 +61,10 @@ a {
   .entry-click {
     top: 45%;
   }
+
+  .welcome-holder-up p {
+    padding: 2px;
+  }
 }
 
 .entry-click p {
