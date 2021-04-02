@@ -63,7 +63,7 @@ a {
   }
 
   .welcome-holder-up p {
-    padding: 2px;
+    padding: 2px !important;
   }
 }
 
