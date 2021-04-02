@@ -57,7 +57,7 @@ a {
   transform: translate(-50%, 0);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .entry-click {
     top: 45%;
   }
@@ -71,7 +71,7 @@ a {
   /*border-top: 3px solid #f3951a;
   border-bottom: 3px solid #f3951a;*/
   font-size: 14px;
-  color: #f3951a;
+  color: #d35f26;
   background: rgba(245, 245, 245, 1);
   max-width: 150px;
   margin-left: auto;
@@ -201,7 +201,7 @@ a {
 .wines_ornament-entry {
   font-family: "bergamot";
   font-size: 1.5em;
-  color: #f3951a;
+  color: #d35f26;
   position: relative;
   bottom: -9px;
 }
