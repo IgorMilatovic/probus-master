@@ -56,6 +56,9 @@ a {
   top: 63%;
   transform: translate(-50%, 0);
 }
+.welcome-holder-up {
+  font-family: "Cinzel-Regular", serif;
+}
 
 @media (max-width: 600px) {
   .entry-click {
@@ -194,8 +197,8 @@ a {
 }
 
 .welcome-holder-up p {
+  color: #d35f26;
   padding: 4px;
-  margin: -17px;
 }
 
 .wines_ornament-entry {
