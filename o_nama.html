@@ -41,7 +41,7 @@
     <!-- Custom css -->
     <link rel="stylesheet" type="text/css" href="css/custom_style.css" />
   </head>
-  <body>
+  <body id="body_o_nama">
     <!-- *** HEADER AND NAVIGATION *** -->
     <header class="page-header p-0">
       <div class="container-fluid">
@@ -52,11 +52,11 @@
             </div>
           </div>
           <div class="col-12 col-lg-7 mt-2">
-            <!--<ul class="header-sub_menu mt-4 p-0 text-center">
-                            <li class="mx-2 mx-sm-5 sub_menu_li"><a href="#"><img class="ornament_icon" src="imgs/generals/orn1.png" alt="ornament_icon"> Link 1</a></li>
-                            <li class="mx-2 mx-sm-5 sub_menu_li"><a href="#"><img class="ornament_icon" src="imgs/generals/orn1.png" alt="ornament_icon"> Link 2</a></li>
-                            <li class="mx-2 mx-sm-5 sub_menu_li"><a href="#"><img class="ornament_icon" src="imgs/generals/orn1.png" alt="ornament_icon"> Link 3</a></li>
-                </ul>-->
+              <ul class="header-sub_menu mt-lg-4 p-0 text-center">
+                  <li class="mx-2 mx-sm-5 sub_menu_li"><a href="#en" data-reload>ENG</a></li>
+                  <li class="mx-2 mx-sm-5 sub_menu_li"><a href="#sr" data-reload>SRB</a></li>
+                  <!--<li class="mx-2 mx-sm-5 sub_menu_li"><a href="#">SLO</a></li>-->
+              </ul>
           </div>
         </div>
       </div>
@@ -77,35 +77,35 @@
           <ul class="navbar-nav mx-auto">
             <li class="nav-item tab mx-auto mx-lg-0">
               <a
-                class="nav-link mt-4 mb-2 my-lg-0 p-2 active"
+                id="nav_link1" class="nav-link nav-link-lang mt-4 mb-2 my-lg-0 p-2 active"
                 href="o_nama.html"
                 >O nama</a
               >
             </li>
             <li class="nav-item tab mx-auto mx-lg-0">
               <a
-                class="nav-link my-2 my-lg-0 p-2 vinaLink"
+                id="nav_link2" class="nav-link nav-link-lang my-2 my-lg-0 p-2 vinaLink"
                 href="vina.html"
                 >Vina</a
               >
             </li>
             <li class="nav-item tab mx-auto mx-lg-0">
-              <a class="nav-link my-2 my-lg-0 p-2" href="galerija.html"
+              <a id="nav_link3" class="nav-link nav-link-lang my-2 my-lg-0 p-2" href="galerija.html"
                 >Galerija</a
               >
             </li>
             <li class="nav-item tab mx-auto mx-lg-0">
-              <a class="nav-link my-2 my-lg-0 p-2" href="kontakt.html"
+              <a id="nav_link4" class="nav-link nav-link-lang my-2 my-lg-0 p-2" href="kontakt.html"
                 >Kontakt</a
               >
             </li>
             <li class="nav-item tab mx-auto mx-lg-0">
-              <a class="nav-link my-2 my-lg-0 p-2" href="vesti.html"
+              <a id="nav_link5" class="nav-link nav-link-lang my-2 my-lg-0 p-2" href="vesti.html"
                 >Vesti</a
               >
             </li>
             <li class="nav-item tab mx-auto mx-lg-0">
-              <a class="nav-link my-2 my-lg-0 p-2" href="shop.html"
+              <a id="nav_link6" class="nav-link nav-link-lang my-2 my-lg-0 p-2" href="shop.html"
                 >Shop</a
               >
             </li>
@@ -148,11 +148,11 @@
       <div class="row probus_row">
         <div class="col-12 col-lg-12">
           <div class="o_nama_probus_txt_holder mt-3">
-            <p>
+            <p id="o_nama_txt_1">
               Probus vineyards je nova moderna porodična vinarija koja se nalazi na Šuljamačkoj Glavici nedaleko od Sremske Mitrovice. Vinogradi, na površini od 16 ha, su okruženi Nacionalnim parkom Fruška gora sa jedne strane i fantastičnom panoramom Srema sa druge strane. 
             </p>
-            <p class="mb-5 font-italic">
-              "Vinograd voli puno sunca, ali i senku gospodara! Puno je rada uloženo ovde, ali ja još uvek u tome uživam. Najviše me ispunjava pomisao da ima ko će da nastavi moj rad.“ <br> <span>Milorad Milošević, vlasnik</span>
+            <p id="o_nama_txt_2" class="mb-3 font-italic">
+              "Vinograd voli puno sunca, ali i senku gospodara! Puno je rada uloženo ovde, ali ja još uvek u tome uživam. Najviše me ispunjava pomisao da ima ko će da nastavi moj rad.“ <br> <p id="milorad_potpis" class="d-inline">Milorad Milošević, vlasnik</p>
             </p>
           </div>
         </div>
@@ -192,7 +192,7 @@
       data-wow-delay="0.6s"
       data-wow-duration="1.5s"
     >
-      <h2 class="o_nama_page_h2">
+      <h2 id="o_nama_txt_3" class="o_nama_page_h2">
         MARKO Aurelije  PROB 
       </h2>
       <p class="probus-latinski">
@@ -225,7 +225,7 @@
         </div>
         <div class="col-12 col-lg-6">
           <div class="o_nama_probus_txt_holder mt-3">
-            <p>
+            <p id="o_nama_txt_4">
               Ova lokacija ima moćnu istorijsku pozadinu. Marcus Aurelius Probus (232-282), rimski imperator rođen u Sremskoj Mitrovici (Sirmium), ukinuo je zabranu sađenja vinove loze 280. godine i prvi put je posadio na teritoriji današnje Šuljamačke Glavice. Isto tako smo i mi zasadili vinovu lozu 2012. godine, obnovili vinograde i nazvali našu vinariju Probus vineyards u čast rimskom imperatoru.
             </p>
           </div>
@@ -238,7 +238,7 @@
       data-wow-delay="0.6s"
       data-wow-duration="1.5s"
     >
-      <h2 class="o_nama_page_h2 pb-3">NAŠI VINOGRADI I STIL VINA</h2>
+      <h2 id="o_nama_txt_5" class="o_nama_page_h2 pb-3">NAŠI VINOGRADI I STIL VINA</h2>
     </div>
 
     <div
@@ -261,13 +261,13 @@
       <div class="row probus_row">
         <div class="col-12 col-lg-12">
           <div class="o_nama_probus_txt_holder mt-3">
-            <p>
+            <p id="o_nama_txt_6">
               Naši vinogradi se nalaze na Fruškoj gori, praistorijskom ostrvu Panonskog mora. Tlo je bogato različitim vrstama stena, od magmatskih do krečnjačkih šiljaka i filita. Južni položaj vinograda i visina od 260 m iznad nivoa mora omogućavaju dobru osunčanost i provetrenost tokom cele godine što smanjuje broj prskanja vinove loze na minimum.
             </p>
-            <p>
+            <p id="o_nama_txt_7">
               Terroir, ekološki usmerena proizvodnja uz minimalnu upotrebu enoloških sredstava kao i naša težnja prema prirodnoj ravnoteži u vinu ogleda se u neverovatnom karakteru i kompleksnosti naših vina.
             </p>
-            <p>
+            <p id="o_nama_txt_8">
               Naš cilj je da sačuvamo autentičnost vina, kao uticaj tla, mikroklime i sorte grožđa uz neizostavnu stručnost enologa. Vina su kreirana sa strane vrhunskog slovenačkog enologa Uroša Bolčine, koji ima više od 20 godina iskustva i mlade, vrlo perspektivne Ane Muzalevski (enolog/tehnolog).
             </p>
           </div>
@@ -339,22 +339,22 @@
               <nav class="footer-main_menu" role="navigation">
                 <ul class="footer-list2 mt-4">
                   <li>
-                    <a href="o_nama.html"><i class=""></i>O nama</a>
+                    <a id="nav_link1_1" class="nav-link-lang"  href="o_nama.html"><i class=""></i>O nama</a>
                   </li>
                   <li>
-                    <a href="vina.html"><i class=""></i>Vina</a>
+                    <a id="nav_link2_2" class="nav-link-lang"  href="vina.html"><i class=""></i>Vina</a>
                   </li>
                   <li>
-                    <a href="galerija.html"><i class=""></i>Galerija</a>
+                    <a id="nav_link3_3" class="nav-link-lang"  href="galerija.html"><i class=""></i>Galerija</a>
                   </li>
                   <li>
-                    <a href="kontakt.html"><i class=""></i>Kontakt</a>
+                    <a id="nav_link4_4" class="nav-link-lang"  href="kontakt.html"><i class=""></i>Kontakt</a>
                   </li>
                   <li>
-                    <a href="vesti.html"><i class=""></i>Vesti</a>
+                    <a id="nav_link5_5" class="nav-link-lang"  href="vesti.html"><i class=""></i>Vesti</a>
                   </li>
                   <li>
-                    <a href="shop.html"><i class=""></i>Shop</a>
+                    <a id="nav_link6_6" class="nav-link-lang"  href="shop.html"><i class=""></i>Shop</a>
                   </li>
                 </ul>
               </nav>
