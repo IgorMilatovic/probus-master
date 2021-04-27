@@ -607,6 +607,120 @@ section.vesti {
 }
 
 /* SHOP */
+.shop-wine_text_holder {
+  max-width: 500px;
+  display: inline-block;
+}
+
+.shop-wine-type {
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.shop-wine-type span {
+  font-size: 1.2rem;
+}
+
+.shop-cena-holder {
+  border-top: 1px solid rgba(204, 198, 186, 0.5);
+  border-bottom: 1px solid rgba(204, 198, 186, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop-cena {
+  font-size: 1.5rem;
+}
+
+.shop-cena::before {
+  content: "CENA";
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
+input,
+textarea {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  outline: none !important;
+  border: none !important;
+  border-radius: 3px;
+  background-image: none !important;
+  background: rgba(245, 224, 182, 1) !important;
+}
+
+.forma-naslov,
+.forma-podnaslov,
+label,
+.shop-forma-btn {
+  font-family: "Cinzel-Regular", serif;
+}
+
+.shop-forma-btn {
+  background: #f28b58;
+  border: 1px solid #f0d5b1;
+  color: #f0d5b1 !important;
+}
+
+.shop-forma-btn:hover {
+  background: #f0d5b1;
+  border: 1px solid #f28b58;
+  color: #f28b58 !important;
+  cursor: pointer;
+}
+
+.shop-input-kolicina {
+  width: 80px;
+  height: 30px;
+  color: #584831;
+  background: rgba(245, 224, 182, 1);
+}
+
+.shop-dodaj-vino-button {
+  font-family: "Cinzel-Regular", serif;
+  background: rgba(245, 224, 182, 1);
+  color: #584831;
+  outline: none !important;
+  border-radius: 3px;
+}
+
+.shop-dodaj-vino-button:hover {
+  cursor: pointer;
+}
+
+.shop-wine_text_holder p {
+  font-style: italic;
+  margin-top: 20px;
+  text-align: left;
+  font-family: "Cinzel-Regular", serif;
+  font-size: 1.2rem;
+}
+
+.fa-shopping-cart {
+  font-size: 2.5rem;
+  position: relative;
+}
+
+.fa-shopping-cart:hover {
+  cursor: pointer;
+}
+
+.fa-shopping-cart:hover::after {
+  content: "Pogledajte korpu";
+  font-family: "Cinzel-Regular", serif;
+  text-align: left;
+  position: absolute;
+  font-size: 16px;
+  top: 13px;
+  left: -150px;
+  width: 270px;
+}
+
+.shop-wines_ornament {
+  font-size: 2.3rem;
+}
 
 .shop_txt {
   font-family: "Cinzel-Regular", serif;
