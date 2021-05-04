@@ -607,6 +607,14 @@ section.vesti {
 }
 
 /* SHOP */
+#body_shop {
+  /*overflow-x: hidden;*/
+}
+
+section.shop {
+  width: 100%;
+}
+
 .shop-wine_text_holder {
   max-width: 500px;
   display: inline-block;
@@ -673,7 +681,7 @@ label,
 
 .shop-input-kolicina {
   width: 80px;
-  height: 30px;
+  height: 21px;
   color: #584831;
   background: rgba(245, 224, 182, 1);
 }
@@ -699,6 +707,7 @@ label,
 }
 
 .fa-shopping-cart {
+  color: #e49b3d;
   font-size: 2.5rem;
   position: relative;
 }
@@ -731,6 +740,58 @@ label,
   border-top: 1px solid #f3951a;
   border-bottom: 1px solid #f3951a;
   margin-top: 30px;
+}
+
+.shop-korpa-main-icon {
+  width: 100px;
+}
+
+.shop-korpa-main-icon:hover {
+  cursor: default;
+}
+
+.shop-korpa-main-icon:hover::after {
+  content: none !important;
+  cursor: default !important;
+}
+
+.shop-korpa {
+  font-family: "Cinzel-Regular", serif;;
+  width: 65%;
+  border-top:1px solid #f3951a;
+  border-bottom:1px solid #f3951a;
+}
+
+.shop-korpa-poruka-empty, .shop-korpa-poruka {
+  color: #f28b58;
+}
+
+.shop-korpa-poruka-empty {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.odabrano-vino {
+  border-bottom: 1px solid #c8c4b9;
+}
+
+.odabrano-vino .original-gold {
+  font-size: 20px;
+}
+
+.ukloni-vino-linija, .ukloni-vino {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ukloni-vino {
+  position: relative;
+  bottom: -2px;
+}
+
+.ukloni-vino:hover {
+  cursor: pointer;
 }
 
 .shop-contact {

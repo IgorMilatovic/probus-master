@@ -1,1 +1,105 @@
+/*var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);*/
+
+/*VINA ZA ODABIR*/
+let vina = [...document.getElementsByClassName('odabrano-vino')];
+/*DUGMICI ZA DODAVANJE VINA*/
+let dodaj_vino_buttons = [...document.getElementsByClassName('shop-dodaj-vino-button')];
+/*X-ići ZA UKLANJANJE VINA IZ ODABIRA*/
+let ukloni_vino_buttons = [...document.getElementsByClassName('ukloni-vino')];
+/*CENE VINA*/
+let cene_vina = [...document.getElementsByClassName('cena-boce-vina')];
+/*ZBIRNE CENE PO VINU*/
+let inicijalna_cena_odabranog_vina = [...document.getElementsByClassName('inicijalna-cena-po-vinu')];
+/*INPUTI ZA UNOS KOLICINE VINA*/
+let kolicina_vina = [...document.getElementsByClassName('shop-input-kolicina')];
+
+const poruka_prazna_korpa = document.getElementById('poruka-prazna-korpa');
+let cena_porudzbe_holder = document.getElementById('cena-porudzbe-holder');
+let cena_dostave_holder = document.getElementById('cena-dostave-holder');
+let cena_porudzbe_iznos = document.getElementById('ukupna-cena-iznos');
+
+
+/*KORPA - DODAVANJE I UKLANJANJE VINA*/
+/*pomocni brojac*/
+let broj_odabranih_vina = 0;
+
+function ukloni_vino(i) {
+  ukloni_vino_buttons[i].addEventListener('click', function () {
+
+    vina[i].classList.add("d-none");
+    inicijalna_cena_odabranog_vina[i].classList.remove('odabrano-vino-iznos');
+    broj_odabranih_vina -= 1;
+    zbirni_iznos_za_naplatu()
+
+    if (broj_odabranih_vina === 0) {
+      poruka_prazna_korpa.classList.remove('d-none');
+      cena_porudzbe_holder.classList.add('d-none');
+      cena_dostave_holder.classList.add('d-none');
+    }
+  })
+}
+
+dodaj_vino_buttons.forEach(function (button, i) {
+  button.addEventListener('click', function () {
+    vina[i].classList.remove('d-none');
+
+    if (!inicijalna_cena_odabranog_vina[i].classList.contains('odabrano-vino-iznos')) {
+      inicijalna_cena_odabranog_vina[i].classList.add('odabrano-vino-iznos');
+      kolicina_vina[i].value = 1;
+      inicijalna_cena_odabranog_vina[i].innerHTML = cene_vina[i].innerHTML;
+      let cenaVina = Number(cene_vina[i].innerHTML);
+      let ukupnaCenaInicijalna = Number(cena_porudzbe_iznos.innerHTML);
+      cena_porudzbe_iznos.innerHTML = ukupnaCenaInicijalna + cenaVina;
+      broj_odabranih_vina += 1;
+    }
+
+    poruka_prazna_korpa.classList.add('d-none');
+    cena_porudzbe_holder.classList.remove('d-none');
+    cena_dostave_holder.classList.remove('d-none');
+  })
+  ukloni_vino(i);
+})
+
+/*PROMENA IZNOSA CENE NA UNOS KOLICINE VINA*/
+function cena_na_unos_kolicine_vina(event) {
+  kolicina_vina.forEach(function (input, i) {
+    input.addEventListener(event, function () {
+      input.nextElementSibling.innerHTML = input.value * cene_vina[i].innerHTML;
+      zbirni_iznos_za_naplatu();
+    })
+  })
+}
+
+const events = ['change', 'keyup', 'touchstart'];
+events.forEach(function (event) {
+  cena_na_unos_kolicine_vina(event);
+})
+
+
+/*UKUPAN IZNOS ZA NAPLATU*/
+function zbirni_iznos_za_naplatu() {
+  let cenaVina;
+  cena_porudzbe_iznos.innerHTML = 0;
+
+  inicijalna_cena_odabranog_vina.forEach(function (cena, i) {
+    if (cena.classList.contains('odabrano-vino-iznos')) {
+      cenaVina = Number(cena.innerHTML);
+      ukupnaCena = Number(cena_porudzbe_iznos.innerHTML);
+      cena_porudzbe_iznos.innerHTML = ukupnaCena + cenaVina;
+    }
+  })
+}
+
+
+
+
 
