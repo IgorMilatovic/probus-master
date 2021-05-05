@@ -26,6 +26,7 @@ const poruka_prazna_korpa = document.getElementById('poruka-prazna-korpa');
 let cena_porudzbe_holder = document.getElementById('cena-porudzbe-holder');
 let cena_dostave_holder = document.getElementById('cena-dostave-holder');
 let cena_porudzbe_iznos = document.getElementById('ukupna-cena-iznos');
+let cena_dostave = document.getElementById('dostava-iznos');
 
 
 /*KORPA - DODAVANJE I UKLANJANJE VINA*/
@@ -39,7 +40,7 @@ function ukloni_vino(i) {
     inicijalna_cena_odabranog_vina[i].classList.remove('odabrano-vino-iznos');
     broj_odabranih_vina -= 1;
     zbirni_iznos_za_naplatu()
-
+    cena_dostave_vina();
     if (broj_odabranih_vina === 0) {
       poruka_prazna_korpa.classList.remove('d-none');
       cena_porudzbe_holder.classList.add('d-none');
@@ -65,16 +66,21 @@ dodaj_vino_buttons.forEach(function (button, i) {
     poruka_prazna_korpa.classList.add('d-none');
     cena_porudzbe_holder.classList.remove('d-none');
     cena_dostave_holder.classList.remove('d-none');
+
+    cena_dostave_vina()
   })
   ukloni_vino(i);
 })
 
 /*PROMENA IZNOSA CENE NA UNOS KOLICINE VINA*/
 function cena_na_unos_kolicine_vina(event) {
+
   kolicina_vina.forEach(function (input, i) {
     input.addEventListener(event, function () {
       input.nextElementSibling.innerHTML = input.value * cene_vina[i].innerHTML;
+
       zbirni_iznos_za_naplatu();
+      cena_dostave_vina();
     })
   })
 }
@@ -84,13 +90,33 @@ events.forEach(function (event) {
   cena_na_unos_kolicine_vina(event);
 })
 
+/*PROVERA ZBIRA KOLICINE VINA ZBOG IZNOSA CENE DOSTAVE*/
+function cena_dostave_vina() {
+  let kolicina_vina = 0;
+  let input_value;
+
+  inicijalna_cena_odabranog_vina.forEach(function (cena, i) {
+    if (cena.classList.contains('odabrano-vino-iznos')) {
+      input_value = Number(cena.previousElementSibling.value);
+      kolicina_vina += input_value;
+    }
+  })
+
+  if (kolicina_vina >= 6) {
+    cena_dostave.innerHTML = 0;
+  }
+  else {
+    cena_dostave.innerHTML = 410;
+  }
+}
+
 
 /*UKUPAN IZNOS ZA NAPLATU*/
 function zbirni_iznos_za_naplatu() {
   let cenaVina;
   cena_porudzbe_iznos.innerHTML = 0;
 
-  inicijalna_cena_odabranog_vina.forEach(function (cena, i) {
+  inicijalna_cena_odabranog_vina.forEach(function (cena) {
     if (cena.classList.contains('odabrano-vino-iznos')) {
       cenaVina = Number(cena.innerHTML);
       ukupnaCena = Number(cena_porudzbe_iznos.innerHTML);
