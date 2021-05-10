@@ -42,7 +42,7 @@ let specifikacija_linkovi = [...document.getElementsByClassName('specifikacija-l
 let specifikacije = [...document.getElementsByClassName('specifikacije-wrapper')];
 /*SPECIFIKACIJE vertikalna linije*/
 let vr_line_specifikacije = [...$('.vr-line-specifikacije')];
-/*SPECIFIKACIJE close-X*/
+/*X-ići za zatvaranje SPECIFIKACIJE*/
 let zatvarac_specifikacije = [...document.getElementsByClassName('ukloni-specifikaciju')];
 
 
@@ -52,6 +52,8 @@ let cena_dostave_holder = document.getElementById('cena-dostave-holder');
 let cena_porudzbe_iznos = document.getElementById('ukupna-cena-iznos');
 let cena_dostave = document.getElementById('dostava-iznos');
 let pdv_poruka = document.getElementById('pdv-poruka');
+
+
 /*SPECIFIKACIJE*/
 specifikacija_linkovi.forEach(function (link, i) {
 
@@ -159,7 +161,6 @@ function cena_dostave_vina() {
     cena_dostave.innerHTML = 410;
   }
 }
-
 
 /*UKUPAN IZNOS ZA NAPLATU*/
 function zbirni_iznos_za_naplatu() {
