@@ -9,6 +9,21 @@
   }
 );*/
 
+/*SIRINA I POZICIJA LINIJA U SPECIFIKACIJI VINA*/
+
+
+/*vr_helper_width.forEach(function (helper, i) {
+  let helper_helper1 = Number(helper) - 77;
+  vr_line_specifikacije[i].style.width = helper_helper1 + 'px';
+  let vr_margin_helper = Math.round(helper_helper1 / 2) + 25;
+  vr_line_specifikacije[i].style.marginTop = vr_margin_helper + 'px';
+})*/
+
+
+
+
+
+
 /*VINA ZA ODABIR*/
 let vina = [...document.getElementsByClassName('odabrano-vino')];
 /*DUGMICI ZA DODAVANJE VINA*/
@@ -21,12 +36,49 @@ let cene_vina = [...document.getElementsByClassName('cena-boce-vina')];
 let inicijalna_cena_odabranog_vina = [...document.getElementsByClassName('inicijalna-cena-po-vinu')];
 /*INPUTI ZA UNOS KOLICINE VINA*/
 let kolicina_vina = [...document.getElementsByClassName('shop-input-kolicina')];
+/*SPECIFIKACIJA LINKOVI*/
+let specifikacija_linkovi = [...document.getElementsByClassName('specifikacija-link')];
+/*SPECIFIKACIJE*/
+let specifikacije = [...document.getElementsByClassName('specifikacije-wrapper')];
+/*SPECIFIKACIJE vertikalna linije*/
+let vr_line_specifikacije = [...$('.vr-line-specifikacije')];
+/*SPECIFIKACIJE close-X*/
+let zatvarac_specifikacije = [...document.getElementsByClassName('ukloni-specifikaciju')];
+
 
 const poruka_prazna_korpa = document.getElementById('poruka-prazna-korpa');
 let cena_porudzbe_holder = document.getElementById('cena-porudzbe-holder');
 let cena_dostave_holder = document.getElementById('cena-dostave-holder');
 let cena_porudzbe_iznos = document.getElementById('ukupna-cena-iznos');
 let cena_dostave = document.getElementById('dostava-iznos');
+
+/*SPECIFIKACIJE*/
+specifikacija_linkovi.forEach(function (link, i) {
+
+  link.addEventListener('click', function () {
+    specifikacije.forEach(function (spec, i) {
+      spec.classList.add('d-none');
+    })
+    specifikacije[i].classList.remove('d-none');
+    //vr
+    let vr_helper_height = specifikacije[i].offsetHeight;
+    vr_helper_height = Number(vr_helper_height) - 77;
+    vr_line_specifikacije[i].style.width = vr_helper_height + 'px';
+    let vr_margin_helper = Math.round(vr_helper_height / 2) + 25;
+    vr_line_specifikacije[i].style.marginTop = vr_margin_helper + 'px';
+    //hr
+    let hr_helper_width = specifikacije[i].offsetWidth;
+    hr_helper_width = Number(hr_helper_width) - 123;
+    $('.hr-line-specifikacije').css({ 'width': hr_helper_width + 'px' });
+
+
+
+    zatvarac_specifikacije[i].addEventListener('click', function () {
+      specifikacije[i].classList.add('d-none');
+    })
+  })
+})
+
 
 
 /*KORPA - DODAVANJE I UKLANJANJE VINA*/

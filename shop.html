@@ -85,13 +85,34 @@
 
   <!-- SHOP SECTION -->
   <section class="shop mb-5 pb-5 px-3 px-lg-0">
-    <div class="text-center contact_logo_holder mt-5 pt-5 mb-4">
+    <div class="text-center contact_logo_holder mt-5 pt-5 mb-3">
       <img class="contact_logo" src="imgs/generals/orn_contact.png" alt="ornament probus logo" />
     </div>
     <div class="container-fluid my-5 pt-4">
-      <div class="row pt-5">
+      <div class="row pt-3">
+
+
+        <!-- SHOP info -->
+        <div class="container-fluid">
+          <div class="row mx-lg-5">
+            <div class="col-12 pb-5">
+              <div class="shop_txt py-1">
+                <p id="shop_txt1" class="mt-3">
+                  Online poručivanje vina je moguće sa teritorije Republike Srbije. Za porudžbe iz inostranstva obratite
+                  nam se na mail:
+                </p>
+                <p class="my-3">
+                  <a href="mailto:info@probus-vineyards.rs"><span
+                      class="shop-contact">info@probus-vineyards.rs</span></a>
+                </p>
+                <p id="shop_txt2">sve cene su prikazane sa PDV-om</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- VINO 1 -->
-        <div id="shop-vino1" class="col-12 col-xl-12 pl-md-4">
+        <div id="shop-vino1" class="col-12 col-xl-12 pl-md-4 pt-lg-5 mt-lg-4">
           <div class="row">
             <div class="d-none d-xl-block col-2"></div>
             <div class="col-12 col-xl-3 pr-2">
@@ -100,10 +121,10 @@
                   src="imgs/vina/Magis.jpg" alt="wine bottle" />
               </div>
             </div>
-            <div class="col-12 col-xl-5 p-0 text-center">
+            <div id="shop-vino1-target" class="col-12 col-xl-5 p-0 text-center">
               <div class="wine_text_holder shop-wine_text_holder my-4 wow fadeIn" data-wow-delay="0.9s"
                 data-wow-duration="3s">
-                <h2 id="vina_magis1" class="wine_type shop-wine-type pt-3 pt-md-5">
+                <h2 class="wine_type shop-wine-type pt-3 pt-md-5">
                   MAGIS 2017 <br />
                   <span>Cabernet Sauvignon & Merlot & Vranac</span>
                 </h2>
@@ -125,7 +146,9 @@
                     kupina, šljiva i crveno voće, sa nastavkom aroma
                     kedrovine, duvana i začina koje potiču od hrasta...
                   </p>
-                  <div class="text-right mr-4">
+                  <div class="d-flex justify-content-between mr-4">
+                    <p class="mr-5 d-inline-block"><a class="specifikacija-link" href="#vino1">specifikacija</a>
+                    </p>
                     <a href="#korpa"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                   </div>
                 </div>
@@ -137,6 +160,44 @@
             <p class="wines_ornament shop-wines_ornament wow fadeIn" data-wow-delay="0.4s">
               &#85;
             </p>
+          </div>
+
+          <!-- SPECIFIKACIJA MAGIS -->
+          <div id="vino1" class="specifikacije-wrapper d-none">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="vino-specifikacije vino1 w-100 h-100">
+                  <div class="specifikacije-zaglavlje w-100">
+                    <div class="contact_logo_holder mx-auto mt-3 mb-3">
+                      <hr class="hr-line-specifikacije">
+                      <div class="zatvori-specifikaciju-X">
+                        <span class="ukloni-specifikaciju"> X</span>
+                      </div>
+                      <img class="contact_logo contact_logo_specifikacije img-fluid p-1"
+                        src="imgs/generals/orn_contact.png" alt="ornament probus logo" />
+                      <hr class="vr-line-specifikacije mb-0">
+                    </div>
+                    <h2 class="text-center my-5 pt-5 original-gold">MAGIS
+                      2017</h2>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <ul class="pt-4 d-inline-block ">
+                      <li class="mb-4 original-gold">Alkohol: 13,65% vol; </li>
+                      <li class="mb-4 original-gold">Ukupne kiseline: 6,47 g/l;</li>
+                      <li class="mb-4 original-gold">Neprevreli šećeri: 1,00g/l;</li>
+                      <li class="mb-4 original-gold">Ukupan SO2: 68,0 mg/l;</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                    </ul>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <p class="wines_ornament-entry ornament-tzar">&#85;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- END of VINO 1 -->
@@ -154,7 +215,7 @@
             <div class="col-12 col-xl-5 p-0 text-center">
               <div class="wine_text_holder shop-wine_text_holder my-4 wow fadeIn" data-wow-delay="0.9s"
                 data-wow-duration="3s">
-                <h2 id="vina_magis1" class="wine_type shop-wine-type pt-3 pt-md-5">
+                <h2 class="wine_type shop-wine-type pt-3 pt-md-5">
                   TRAMINAC 2018 <br />
                   <span>Gewurztraminer</span>
                 </h2>
@@ -175,7 +236,9 @@
                     arome egzotičnog i tropskog voća, ružinih latica, đumbira
                     i tostirane note...
                   </p>
-                  <div class="text-right mr-4">
+                  <div class="d-flex justify-content-between mr-4">
+                    <p class="mr-5 d-inline-block"><a class="specifikacija-link" href="#vino2">specifikacija</a>
+                    </p>
                     <a href="#korpa"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                   </div>
                 </div>
@@ -187,6 +250,43 @@
             <p class="wines_ornament shop-wines_ornament wow fadeIn" data-wow-delay="0.4s">
               &#85;
             </p>
+          </div>
+
+          <!-- SPECIFIKACIJA TRAMINAC -->
+          <div id="vino6" class="specifikacije-wrapper d-none">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="vino-specifikacije vino1 w-100 h-100">
+                  <div class="specifikacije-zaglavlje w-100">
+                    <div class="contact_logo_holder mx-auto mt-3 mb-3">
+                      <hr class="hr-line-specifikacije">
+                      <div class="zatvori-specifikaciju-X">
+                        <span class="ukloni-specifikaciju"> X</span>
+                      </div>
+                      <img class="contact_logo contact_logo_specifikacije img-fluid p-1"
+                        src="imgs/generals/orn_contact.png" alt="ornament probus logo" />
+                      <hr class="vr-line-specifikacije mb-0">
+                    </div>
+                    <h2 class="text-center my-5 pt-5 original-gold">TRAMINAC 2018</h2>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <ul class="pt-4 d-inline-block ">
+                      <li class="mb-4 original-gold">Alkohol: 13,65% vol; </li>
+                      <li class="mb-4 original-gold">Ukupne kiseline: 6,47 g/l;</li>
+                      <li class="mb-4 original-gold">Neprevreli šećeri: 1,00g/l;</li>
+                      <li class="mb-4 original-gold">Ukupan SO2: 68,0 mg/l;</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                    </ul>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <p class="wines_ornament-entry ornament-tzar">&#85;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- END of VINO 2 -->
@@ -204,7 +304,7 @@
             <div class="col-12 col-xl-5 p-0 text-center">
               <div class="wine_text_holder shop-wine_text_holder my-4 wow fadeIn" data-wow-delay="0.9s"
                 data-wow-duration="3s">
-                <h2 id="vina_magis1" class="wine_type shop-wine-type pt-3 pt-md-5">
+                <h2 class="wine_type shop-wine-type pt-3 pt-md-5">
                   BeliM 2017 <br />
                   <span>Oranž vino – Riesling & Gewurztraminer</span>
                 </h2>
@@ -225,7 +325,9 @@
                     koštunjavog voća. Zemljane, začinske i note barika sa
                     uravnoteženom mineralnošću...
                   </p>
-                  <div class="text-right mr-4">
+                  <div class="d-flex justify-content-between mr-4">
+                    <p class="mr-5 d-inline-block"><a class="specifikacija-link" href="#vino3">specifikacija</a>
+                    </p>
                     <a href="#korpa"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                   </div>
                 </div>
@@ -237,6 +339,42 @@
             <p class="wines_ornament shop-wines_ornament wow fadeIn" data-wow-delay="0.4s">
               &#85;
             </p>
+          </div>
+          <!-- SPECIFIKACIJA BeliM -->
+          <div id="vino6" class="specifikacije-wrapper d-none">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="vino-specifikacije vino1 w-100 h-100">
+                  <div class="specifikacije-zaglavlje w-100">
+                    <div class="contact_logo_holder mx-auto mt-3 mb-3">
+                      <hr class="hr-line-specifikacije">
+                      <div class="zatvori-specifikaciju-X">
+                        <span class="ukloni-specifikaciju"> X</span>
+                      </div>
+                      <img class="contact_logo contact_logo_specifikacije img-fluid p-1"
+                        src="imgs/generals/orn_contact.png" alt="ornament probus logo" />
+                      <hr class="vr-line-specifikacije mb-0">
+                    </div>
+                    <h2 class="text-center my-5 pt-5 original-gold">BeliM 2017</h2>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <ul class="pt-4 d-inline-block ">
+                      <li class="mb-4 original-gold">Alkohol: 13,65% vol; </li>
+                      <li class="mb-4 original-gold">Ukupne kiseline: 6,47 g/l;</li>
+                      <li class="mb-4 original-gold">Neprevreli šećeri: 1,00g/l;</li>
+                      <li class="mb-4 original-gold">Ukupan SO2: 68,0 mg/l;</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                    </ul>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <p class="wines_ornament-entry ornament-tzar">&#85;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- END of VINO 3 -->
@@ -254,7 +392,7 @@
             <div class="col-12 col-xl-5 p-0 text-center">
               <div class="wine_text_holder shop-wine_text_holder my-4 wow fadeIn" data-wow-delay="0.9s"
                 data-wow-duration="3s">
-                <h2 id="vina_magis1" class="wine_type shop-wine-type pt-3 pt-md-5">
+                <h2 class="wine_type shop-wine-type pt-3 pt-md-5">
                   SAUVIGNON BLANC 2018
                 </h2>
                 <div class="shop-cena-holder text-center mt-2 mt-md-5 py-4">
@@ -276,7 +414,9 @@
                     atraktivan, ali i bogat i odvažan. Balansiran i
                     kompleksan...
                   </p>
-                  <div class="text-right mr-4">
+                  <div class="d-flex justify-content-between mr-4">
+                    <p class="mr-5 d-inline-block"><a class="specifikacija-link" href="#vino4">specifikacija</a>
+                    </p>
                     <a href="#korpa"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                   </div>
                 </div>
@@ -288,6 +428,42 @@
             <p class="wines_ornament shop-wines_ornament wow fadeIn" data-wow-delay="0.4s">
               &#85;
             </p>
+          </div>
+          <!-- SPECIFIKACIJA SAUVIGNON -->
+          <div id="vino6" class="specifikacije-wrapper d-none">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="vino-specifikacije vino1 w-100 h-100">
+                  <div class="specifikacije-zaglavlje w-100">
+                    <div class="contact_logo_holder mx-auto mt-3 mb-3">
+                      <hr class="hr-line-specifikacije">
+                      <div class="zatvori-specifikaciju-X">
+                        <span class="ukloni-specifikaciju"> X</span>
+                      </div>
+                      <img class="contact_logo contact_logo_specifikacije img-fluid p-1"
+                        src="imgs/generals/orn_contact.png" alt="ornament probus logo" />
+                      <hr class="vr-line-specifikacije mb-0">
+                    </div>
+                    <h2 class="text-center my-5 pt-5 original-gold">SAUVIGNON BLANC 2018</h2>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <ul class="pt-4 d-inline-block ">
+                      <li class="mb-4 original-gold">Alkohol: 13,65% vol; </li>
+                      <li class="mb-4 original-gold">Ukupne kiseline: 6,47 g/l;</li>
+                      <li class="mb-4 original-gold">Neprevreli šećeri: 1,00g/l;</li>
+                      <li class="mb-4 original-gold">Ukupan SO2: 68,0 mg/l;</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                    </ul>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <p class="wines_ornament-entry ornament-tzar">&#85;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- END of VINO 4 -->
@@ -305,7 +481,7 @@
             <div class="col-12 col-xl-5 p-0 text-center">
               <div class="wine_text_holder shop-wine_text_holder my-4 wow fadeIn" data-wow-delay="0.9s"
                 data-wow-duration="3s">
-                <h2 id="vina_magis1" class="wine_type shop-wine-type pt-3 pt-md-5">
+                <h2 class="wine_type shop-wine-type pt-3 pt-md-5">
                   CHARDONNAY 2018
                 </h2>
                 <div class="shop-cena-holder text-center mt-2 mt-md-5 py-4">
@@ -328,7 +504,9 @@
                     Bogata aromatika koja se sa vremenom razvija u kompleksne
                     note...
                   </p>
-                  <div class="text-right mr-4">
+                  <div class="d-flex justify-content-between mr-4">
+                    <p class="mr-5 d-inline-block"><a class="specifikacija-link" href="#vino5">specifikacija</a>
+                    </p>
                     <a href="#korpa"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                   </div>
                 </div>
@@ -340,6 +518,42 @@
             <p class="wines_ornament shop-wines_ornament wow fadeIn" data-wow-delay="0.4s">
               &#85;
             </p>
+          </div>
+          <!-- SPECIFIKACIJA CHARDONNAY -->
+          <div id="vino6" class="specifikacije-wrapper d-none">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="vino-specifikacije vino1 w-100 h-100">
+                  <div class="specifikacije-zaglavlje w-100">
+                    <div class="contact_logo_holder mx-auto mt-3 mb-3">
+                      <hr class="hr-line-specifikacije">
+                      <div class="zatvori-specifikaciju-X">
+                        <span class="ukloni-specifikaciju"> X</span>
+                      </div>
+                      <img class="contact_logo contact_logo_specifikacije img-fluid p-1"
+                        src="imgs/generals/orn_contact.png" alt="ornament probus logo" />
+                      <hr class="vr-line-specifikacije mb-0">
+                    </div>
+                    <h2 class="text-center my-5 pt-5 original-gold">CHARDONNAY 2018</h2>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <ul class="pt-4 d-inline-block ">
+                      <li class="mb-4 original-gold">Alkohol: 13,65% vol; </li>
+                      <li class="mb-4 original-gold">Ukupne kiseline: 6,47 g/l;</li>
+                      <li class="mb-4 original-gold">Neprevreli šećeri: 1,00g/l;</li>
+                      <li class="mb-4 original-gold">Ukupan SO2: 68,0 mg/l;</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                    </ul>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <p class="wines_ornament-entry ornament-tzar">&#85;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <!-- END of VINO 5 -->
@@ -357,7 +571,7 @@
             <div class="col-12 col-xl-5 p-0 text-center">
               <div class="wine_text_holder shop-wine_text_holder my-4 wow fadeIn" data-wow-delay="0.9s"
                 data-wow-duration="3s">
-                <h2 id="vina_magis1" class="wine_type shop-wine-type pt-3 pt-md-5">
+                <h2 class="wine_type shop-wine-type pt-3 pt-md-5">
                   Pet-Nat 2020
                 </h2>
                 <div class="shop-cena-holder text-center mt-2 mt-md-5 py-4">
@@ -378,7 +592,9 @@
                     bogat aromama tropskog voća. Hrskav i lagan sa lepim
                     kiselinama...
                   </p>
-                  <div class="text-right mr-4">
+                  <div class="d-flex justify-content-between mr-4">
+                    <p class="mr-5 d-inline-block"><a class="specifikacija-link" href="#vino6">specifikacija</a>
+                    </p>
                     <a href="#korpa"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                   </div>
                 </div>
@@ -389,10 +605,50 @@
           <div class="d-flex justify-content-center my-5">
 
           </div>
+          <!-- SPECIFIKACIJA Pet-Nat -->
+          <div id="vino6" class="specifikacije-wrapper d-none">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="vino-specifikacije vino1 w-100 h-100">
+                  <div class="specifikacije-zaglavlje w-100">
+                    <div class="contact_logo_holder mx-auto mt-3 mb-3">
+                      <hr class="hr-line-specifikacije">
+                      <div class="zatvori-specifikaciju-X">
+                        <span class="ukloni-specifikaciju"> X</span>
+                      </div>
+                      <img class="contact_logo contact_logo_specifikacije img-fluid p-1"
+                        src="imgs/generals/orn_contact.png" alt="ornament probus logo" />
+                      <hr class="vr-line-specifikacije mb-0">
+                    </div>
+                    <h2 class="text-center my-5 pt-5 original-gold">Pet-Nat 2020</h2>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <ul class="pt-4 d-inline-block ">
+                      <li class="mb-4 original-gold">Alkohol: 13,65% vol; </li>
+                      <li class="mb-4 original-gold">Ukupne kiseline: 6,47 g/l;</li>
+                      <li class="mb-4 original-gold">Neprevreli šećeri: 1,00g/l;</li>
+                      <li class="mb-4 original-gold">Ukupan SO2: 68,0 mg/l;</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                      <li class="invisible">Lorem</li>
+                    </ul>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <p class="wines_ornament-entry ornament-tzar">&#85;</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- END of VINO 6 -->
       </div>
     </div>
+
+
+
+
   </section>
 
   <div id="korpa" class="container-fluid mb-5">
