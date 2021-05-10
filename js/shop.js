@@ -51,7 +51,7 @@ let cena_porudzbe_holder = document.getElementById('cena-porudzbe-holder');
 let cena_dostave_holder = document.getElementById('cena-dostave-holder');
 let cena_porudzbe_iznos = document.getElementById('ukupna-cena-iznos');
 let cena_dostave = document.getElementById('dostava-iznos');
-
+let pdv_poruka = document.getElementById('pdv-poruka');
 /*SPECIFIKACIJE*/
 specifikacija_linkovi.forEach(function (link, i) {
 
@@ -79,10 +79,7 @@ specifikacija_linkovi.forEach(function (link, i) {
   })
 })
 
-
-
 /*KORPA - DODAVANJE I UKLANJANJE VINA*/
-/*pomocni brojac*/
 let broj_odabranih_vina = 0;
 
 function ukloni_vino(i) {
@@ -97,6 +94,7 @@ function ukloni_vino(i) {
       poruka_prazna_korpa.classList.remove('d-none');
       cena_porudzbe_holder.classList.add('d-none');
       cena_dostave_holder.classList.add('d-none');
+      pdv_poruka.classList.add('d-none');
     }
   })
 }
@@ -118,7 +116,7 @@ dodaj_vino_buttons.forEach(function (button, i) {
     poruka_prazna_korpa.classList.add('d-none');
     cena_porudzbe_holder.classList.remove('d-none');
     cena_dostave_holder.classList.remove('d-none');
-
+    pdv_poruka.classList.remove('d-none');
     cena_dostave_vina()
   })
   ukloni_vino(i);
