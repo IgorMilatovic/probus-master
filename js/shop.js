@@ -2,27 +2,12 @@
 
 [].forEach.call(
   document.querySelectorAll('*'),
-  function(el) {
+  function (el) {
     if (el.offsetWidth > docWidth) {
       console.log(el);
     }
   }
 );*/
-
-/*SIRINA I POZICIJA LINIJA U SPECIFIKACIJI VINA*/
-
-
-/*vr_helper_width.forEach(function (helper, i) {
-  let helper_helper1 = Number(helper) - 77;
-  vr_line_specifikacije[i].style.width = helper_helper1 + 'px';
-  let vr_margin_helper = Math.round(helper_helper1 / 2) + 25;
-  vr_line_specifikacije[i].style.marginTop = vr_margin_helper + 'px';
-})*/
-
-
-
-
-
 
 /*VINA ZA ODABIR*/
 let vina = [...document.getElementsByClassName('odabrano-vino')];
@@ -72,9 +57,12 @@ specifikacija_linkovi.forEach(function (link, i) {
     let hr_helper_width = specifikacije[i].offsetWidth;
     hr_helper_width = Number(hr_helper_width) - 123;
     $('.hr-line-specifikacije').css({ 'width': hr_helper_width + 'px' });
-
-
-
+    //zatvaranje specifikacije
+    document.addEventListener('keydown', function (event) {
+      if (event.key === "Escape") {
+        specifikacije[i].classList.add('d-none');
+      }
+    });
     zatvarac_specifikacije[i].addEventListener('click', function () {
       specifikacije[i].classList.add('d-none');
     })

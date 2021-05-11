@@ -40,6 +40,10 @@ body {
   color: #f3951a;
 }
 
+.original-gold-spec {
+  color: #e0860f;
+}
+
 .invisible {
   visibility: hidden;
 }
@@ -730,7 +734,7 @@ label,
   text-align: left;
   position: absolute;
   font-size: 16px;
-  top: 13px;
+  top: 24px;
   left: -150px;
   width: 270px;
 }
@@ -853,7 +857,7 @@ label,
   width: 750px;
   max-width: 95%;
   min-height: 10px;
-  background-color: rgba(245, 245, 245, 1);
+  background-color: rgb(253, 241, 212);
   top: 45%;
   left: 50%;
   transform: translate(-50%, -45%);
@@ -868,7 +872,7 @@ label,
   top: 11px;
   left: 15px;
   border-radius: 50%;
-  box-shadow: 0 0 3px #f3951a;
+  box-shadow: 0 0 3px #e0860f;
 }
 
 .vino-specifikacije {
@@ -885,12 +889,12 @@ label,
   top: 0;
   left: 68px;
   height: 1.6px;
-  box-shadow: 0 0 3px #f3951a;
+  box-shadow: 0 0 3px #e0860f;
 }
 
 .vr-line-specifikacije {
   position: absolute;
-  box-shadow: 0 0 3px #f3951a;
+  box-shadow: 0 0 3px #e0860f;
   height: 1.6px;
   left: 15px;
   top: 50%; /* is 50% of width */
