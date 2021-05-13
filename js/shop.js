@@ -38,6 +38,11 @@ let cena_porudzbe_iznos = document.getElementById('ukupna-cena-iznos');
 let cena_dostave = document.getElementById('dostava-iznos');
 let pdv_poruka = document.getElementById('pdv-poruka');
 
+//USPESNA NEUSPESNA PORUDZBA - PORUKA
+let uspesna_porudzba = document.getElementById('uspesna_porudzba');
+let neuspesna_porudzba = document.getElementById('neuspesna_porudzba');
+let ukloni_poruku_uspesna = document.getElementById('ukloni_poruku_uspesna');
+let ukloni_poruku_neuspesna = document.getElementById('ukloni_poruku_neuspesna');
 
 
 /*SPECIFIKACIJE*/
