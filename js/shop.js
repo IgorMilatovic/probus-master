@@ -39,6 +39,7 @@ let cena_dostave = document.getElementById('dostava-iznos');
 let pdv_poruka = document.getElementById('pdv-poruka');
 
 
+
 /*SPECIFIKACIJE*/
 specifikacija_linkovi.forEach(function (link, i) {
 

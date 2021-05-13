@@ -865,6 +865,11 @@ label,
   border-radius: 3px;
 } 
 
+.potvrda-porudzbe-wrapper {
+  background-color: #352b1e;
+  border-radius: 3px;
+}
+
 .contact_logo_specifikacije {
   width: 47px;
   position: absolute;
@@ -873,6 +878,16 @@ label,
   left: 15px;
   border-radius: 50%;
   box-shadow: 0 0 3px #e0860f;
+}
+
+.potvrda-porudzbe-logo {
+  position:static;
+  background: rgb(255, 246, 233);
+}
+
+.potvrda-porudzbe-border {
+  border: 1px solid;
+  border-radius: 3px;
 }
 
 .vino-specifikacije {
