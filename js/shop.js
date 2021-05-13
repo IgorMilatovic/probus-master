@@ -44,6 +44,11 @@ let neuspesna_porudzba = document.getElementById('neuspesna_porudzba');
 let ukloni_poruku_uspesna = document.getElementById('ukloni_poruku_uspesna');
 let ukloni_poruku_neuspesna = document.getElementById('ukloni_poruku_neuspesna');
 
+//ZATVARANJE PORUKE USPESNA PORUDZBA
+ukloni_poruku_uspesna.addEventListener('click', function () {
+  uspesna_porudzba.classList.add('d-none');
+})
+
 
 /*SPECIFIKACIJE*/
 specifikacija_linkovi.forEach(function (link, i) {
