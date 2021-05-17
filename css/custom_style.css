@@ -655,6 +655,13 @@ section.shop {
   margin-right: 10px;
 }
 
+.status {
+  color: red;
+  height: 40px;
+  font-size: 20px;
+  font-family: "Cinzel-Regular", serif;
+}
+
 input,
 textarea {
   appearance: none !important;

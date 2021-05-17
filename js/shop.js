@@ -30,13 +30,47 @@ let vr_line_specifikacije = [...$('.vr-line-specifikacije')];
 /*X-ići za zatvaranje SPECIFIKACIJE*/
 let zatvarac_specifikacije = [...document.getElementsByClassName('ukloni-specifikaciju')];
 
-
 const poruka_prazna_korpa = document.getElementById('poruka-prazna-korpa');
 let cena_porudzbe_holder = document.getElementById('cena-porudzbe-holder');
 let cena_dostave_holder = document.getElementById('cena-dostave-holder');
 let cena_porudzbe_iznos = document.getElementById('ukupna-cena-iznos');
 let cena_dostave = document.getElementById('dostava-iznos');
 let pdv_poruka = document.getElementById('pdv-poruka');
+
+/* VINA */
+let vinaArray = [
+  {
+    name: 'MAGIS 2017',
+    cena: 1740,
+    kolicina: 0
+  },
+  {
+    name: 'TRAMINAC 2018',
+    cena: 1380,
+    kolicina: 0
+  },
+  {
+    name: 'BeliM 2017',
+    cena: 1740,
+    kolicina: 0
+  },
+  {
+    name: 'SAUVIGNON BLANC 2018',
+    cena: 1380,
+    kolicina: 0
+  },
+  {
+    name: 'CHARDONNAY 2018',
+    cena: 1380,
+    kolicina: 0
+  },
+  {
+    name: 'Pet-Nat 2020',
+    cena: 1020,
+    kolicina: 0
+  }
+]
+let orderMaid = false;
 
 //USPESNA NEUSPESNA PORUDZBA - PORUKA
 let uspesna_porudzba = document.getElementById('uspesna_porudzba');
@@ -47,8 +81,13 @@ let ukloni_poruku_neuspesna = document.getElementById('ukloni_poruku_neuspesna')
 //ZATVARANJE PORUKE USPESNA PORUDZBA
 ukloni_poruku_uspesna.addEventListener('click', function () {
   uspesna_porudzba.classList.add('d-none');
+  orderMaid = false;
 })
 
+ukloni_poruku_neuspesna.addEventListener('click', function () {
+  neuspesna_porudzba.classList.add('d-none');
+  orderMaid = false;
+})
 
 /*SPECIFIKACIJE*/
 specifikacija_linkovi.forEach(function (link, i) {
@@ -85,7 +124,7 @@ let broj_odabranih_vina = 0;
 
 function ukloni_vino(i) {
   ukloni_vino_buttons[i].addEventListener('click', function () {
-
+    vinaArray[i].kolicina = 0;
     vina[i].classList.add("d-none");
     inicijalna_cena_odabranog_vina[i].classList.remove('odabrano-vino-iznos');
     broj_odabranih_vina -= 1;
@@ -105,6 +144,9 @@ dodaj_vino_buttons.forEach(function (button, i) {
     vina[i].classList.remove('d-none');
 
     if (!inicijalna_cena_odabranog_vina[i].classList.contains('odabrano-vino-iznos')) {
+      if (vinaArray[i].kolicina === 0) {
+        vinaArray[i].kolicina = 1;
+      }
       inicijalna_cena_odabranog_vina[i].classList.add('odabrano-vino-iznos');
       kolicina_vina[i].value = 1;
       inicijalna_cena_odabranog_vina[i].innerHTML = cene_vina[i].innerHTML;
@@ -128,6 +170,7 @@ function cena_na_unos_kolicine_vina(event) {
 
   kolicina_vina.forEach(function (input, i) {
     input.addEventListener(event, function () {
+      vinaArray[i].kolicina = Number(input.value);
       input.nextElementSibling.innerHTML = input.value * cene_vina[i].innerHTML;
 
       zbirni_iznos_za_naplatu();
@@ -175,7 +218,185 @@ function zbirni_iznos_za_naplatu() {
   })
 }
 
+/* SEND MAIL */
+function sendOrder() {
+  if (!validateForm()) {
+    return;
+  }
 
+  if (orderMaid === false) {
+    orderMaid = true;
+  } else {
+    return;
+  }
+  let porudzbina = [], brojFlasa = 0, fulCena = 0;
+  for (const vino of vinaArray) {
+    if (vino.kolicina > 0) {
+      porudzbina.push({
+        name: vino.name,
+        kolicina: vino.kolicina,
+        cena: vino.cena * vino.kolicina
+      });
+      fulCena = fulCena + (vino.cena * vino.kolicina);
+      brojFlasa = brojFlasa + vino.kolicina;
+    }
+  }
+  const formData = exportDataFromForm();
+  const requestData = {
+    order: porudzbina,
+    price: fulCena,
+    deliveryCost: brojFlasa > 5 ? 0 : 410,
+    quantity: brojFlasa,
+    formData: formData
+  }
+  // console.log('REQUEST DATA: ', requestData);
+  // console.log('FORM OBJECT: ', formData);
+  sendDataToPhp(requestData);
+}
 
+function exportDataFromForm() {
+  const form = document.getElementById("contact-form").elements;
+  let data = {};
+  for (let i = 0; i < form.length; i++) {
+    const element = form[i];
+    data[element.id] = element.value;
+  }
+  return data;
+}
 
+function sendDataToPhp(requestData) {
+  // POST data to the php file
+  $.ajax({
+    url: './php/mail.php',
+    data: requestData,
+    type: 'POST',
+    success: function (data) {
+      // showMessage(data);
+      var messageShowed = false;
+      if (data) {
+        if (data.error) {
+          messageShowed = true;
+          showMessage(false, null, data, null);
+        }
+        if (data.success) {
+          messageShowed = true;
+          showMessage(true, null, data, null);
+        }
+      }
 
+      if (!messageShowed) {
+        showMessage(false, null, data, null);
+      }
+    },
+    error: function (request, error) {
+      showMessage(false, request, null, error);
+    }
+  });
+}
+
+function showMessage(success, request, response, error) {
+  console.log('REQUEST: ', request);
+  console.log('RESPONSE: ', response);
+  console.log('ERROR: ', error);
+  var idName = "";
+  if (success) {
+    idName = "uspesna_porudzba";
+    resetForm();
+  } else {
+    idName = "neuspesna_porudzba";
+  }
+  var poruka = document.getElementById(idName);
+  poruka.classList.remove('d-none');
+}
+
+function resetForm() {
+  // Reset vinaArray
+  for (const vino of vinaArray) {
+    vino.kolicina = 0;
+  }
+
+  // Reset forme
+  document.getElementById("contact-form").reset();
+
+  console.log('TREBA DA NAPISEMO FUNKCIJU ZA RESET FORME I RESET VINA');
+  // TODO: Reset korpe
+}
+
+// VALIDACIJA FORME
+function validateForm() {
+  let status = document.querySelector('.status');
+  //IME i PREZIME
+  let name = document.forms["forma"]["name"].value;
+  if (name == null || name == "" || !/\S/.test(name)) {
+    //alert("Ime i prezime su obavezni");
+    status.innerHTML = "Ime i prezime su obavezni";
+    return false;
+  }
+  let regName = /^([A-Z a-z ČčŠšĆćĐđŽž?!\-\s]*)$/;
+
+  if (!regName.test(name)) {
+    //alert('Unesite svoje puno ime i prezime');
+    status.innerHTML = "Unesite svoje puno ime i prezime";
+    return false;
+  }
+  else {
+    status.innerHTML = "";
+  }
+
+  //EMAIL
+  let mail = document.forms["forma"]["email"].value;
+  let atpos = mail.indexOf("@");
+  let dotposfirst = mail.indexOf(".");
+  let atposlast = mail.lastIndexOf("@");
+  let dotpos = mail.lastIndexOf(".");
+  if (mail == null || mail == "" || !/\S/.test(mail)) {
+    //alert("Email je obavezan");
+    status.innerHTML = "Email je obavezan";
+    return false;
+  }
+  if (atpos < 1 || atposlast + 2 >= mail.length || dotposfirst === atpos + 1 || dotpos + 2 >= mail.length || dotposfirst === 0) {
+    //alert("E-mail adresa nije validna");
+    status.innerHTML = "E-mail adresa nije validna";
+    return false;
+  }
+  status.innerHTML = "";
+
+  //TELEFON
+  let telefon = document.forms["forma"]["telefon"].value;
+  if (telefon == null || telefon == "" || !/\S/.test(telefon)) {
+    //alert("Telefon je obavezan");
+    status.innerHTML = "Telefon je obavezan";
+    return false;
+  }
+  var regtelefon = /^[0-9\/\-\+\(\)\s]+$/;
+
+  if (!regtelefon.test(telefon)) {
+    //alert('Unesite ispravan broj telefona');
+    status.innerHTML = "Unesite ispravan broj telefona";
+    return false;
+  }
+  else {
+    status.innerHTML = "";
+  }
+
+  //ADRESA i GRAD
+  let adresa = document.forms["forma"]["adresa"].value;
+
+  if (adresa == null || adresa == "" || !/\S/.test(adresa)) {
+    //alert("Adresa je obavezna");
+    status.innerHTML = "Adresa je obavezna";
+    return false;
+  }
+  let regadresa = /^[A-Za-z][A-Za-z0-9\s\/]*(?:[A-Za-z0-9]+)*$/;
+
+  if (!regadresa.test(adresa)) {
+    //alert('Unesite ispravanu adresu');
+    status.innerHTML = "Unesite ispravanu adresu";
+    return false;
+  }
+  else {
+    //alert('Adresa ok');
+    status.innerHTML = "";
+    return true;
+  }
+}

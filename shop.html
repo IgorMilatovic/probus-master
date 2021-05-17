@@ -794,7 +794,7 @@
       Po prijemu porudžbenog maila, uskoro cete biti kontaktirani sa
       detaljima isporuke i naplate
     </p>
-
+    <div class="status text-center"></div>
     <div class="row text-center w-100">
       <!--Grid column-->
       <div class="col-md-10 mx-auto mb-md-0 mb-5">
@@ -856,9 +856,9 @@
         </form>
 
         <div class="mr-4 text-right">
-          <a class="btn shop-forma-btn" onclick="document.getElementById('contact-form').submit();">Poruči</a>
+          <!-- document.getElementById('contact-form').submit(); -->
+          <a class="btn shop-forma-btn" onclick="sendOrder()">Poruči</a>
         </div>
-        <div class="status"></div>
       </div>
       <!--Grid column-->
     </div>
@@ -895,7 +895,7 @@
   </div>
 
   <!-- NEUSPESNA PORUDZBA -->
-  <div id="neuspesna_porudzba" class="specifikacije-wrapper potvrda-porudzbe-wrapper">
+  <div id="neuspesna_porudzba" class="specifikacije-wrapper potvrda-porudzbe-wrapper d-none">
     <div class="container-fluid">
       <div class="row p-1">
         <div class="vino-specifikacije potvrda-porudzbe-border vino1 w-100 h-100">
@@ -908,7 +908,7 @@
                 src="imgs/generals/orn_contact.png" alt="ornament probus logo" />
             </div>
             <p class="p-2 m-0 ml-3">Došlo je do tehničke greške u slanju porudžbe. Zatvorite ovu poruku i pokušajte
-              ponovo.
+              ponovo. Ukoliko ova poruka nastavi da se pojavljuje, molimo da nas kontaktirate.
             </p>
             <p class="m-0 mr-5 p-2 text-right">Hvala na razumevanju</p>
           </div>
@@ -1054,12 +1054,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
     integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
     crossorigin="anonymous"></script>
+  <script src="js/smoothscroll.js"></script>
   <script src="js/wow.min.js"></script>
   <script>
     new WOW().init();
   </script>
   <script src="js/custom.js"></script>
   <script src="js/shop.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 
 </html>
