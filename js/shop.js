@@ -318,8 +318,22 @@ function resetForm() {
   // Reset forme
   document.getElementById("contact-form").reset();
 
-  console.log('TREBA DA NAPISEMO FUNKCIJU ZA RESET FORME I RESET VINA');
-  // TODO: Reset korpe
+
+  // Reset korpe
+  vina.forEach(function (vino, i) {
+    vino.classList.add("d-none");
+    inicijalna_cena_odabranog_vina[i].innerHTML = vinaArray[i].cena;
+    inicijalna_cena_odabranog_vina[i].classList.remove('odabrano-vino-iznos');
+    kolicina_vina[i].value = 1;
+  })
+
+  cena_porudzbe_iznos = 0;
+  cena_dostave = 410;
+
+  poruka_prazna_korpa.classList.remove('d-none');
+  cena_porudzbe_holder.classList.add('d-none');
+  cena_dostave_holder.classList.add('d-none');
+  pdv_poruka.classList.add('d-none');
 }
 
 // VALIDACIJA FORME
@@ -387,7 +401,7 @@ function validateForm() {
     status.innerHTML = "Adresa je obavezna";
     return false;
   }
-  let regadresa = /^[A-Za-z][A-Za-z0-9\s\/]*(?:[A-Za-z0-9]+)*$/;
+  let regadresa = /^[A-Za-z0-9ČčŠšĆćĐđŽž ][A-Za-z0-9ČčŠšĆćĐđŽž\s\/]*(?:[A-Za-z0-9]+)*$/;
 
   if (!regadresa.test(adresa)) {
     //alert('Unesite ispravanu adresu');
